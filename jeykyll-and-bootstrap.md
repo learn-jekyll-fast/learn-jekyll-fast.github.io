@@ -11,4 +11,3 @@ Here are the reasons:
 2. It's jQuery free
 3. It's lightning fast
 
-{% include cookie-warning.html %}
