@@ -1,6 +1,6 @@
 ---
+layout: default
 title: Liquid objects tags and filters
-
 ---
 {% include cookie-warning.html %}
 <h1> {{ page.title }} </h1>
