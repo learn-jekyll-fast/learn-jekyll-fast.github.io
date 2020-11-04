@@ -9,4 +9,3 @@ It's a _great_ way to build and host your personal websites.
 
 ## Seriously! It's great!
 
-{% include cookie-warning.html %}
