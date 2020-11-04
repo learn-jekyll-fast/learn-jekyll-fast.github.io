@@ -1,3 +1,8 @@
+---
+layout: default
+title: Jekyll and Bootstrap
+---
+
 # Start using Bootstap 5 and Jekyll
 
 Here are the reasons:
