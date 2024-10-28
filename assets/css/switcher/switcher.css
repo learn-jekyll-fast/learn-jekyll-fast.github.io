@@ -1,0 +1,116 @@
+
+/* Styles Switcher */
+
+#style-switcher {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 0 0 3px;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+	left: 0;
+	position: fixed;
+	top: 168px;
+	width: 220px;
+	z-index: 9999;
+}
+#style-switcher div {
+padding: 0px 10px;
+}
+#style-switcher h2 {
+	color: #333;
+	font-family: montserrat,sans-serif;
+	font-size: 16px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+#style-switcher h2 a {
+	background: #00bcd4 none repeat scroll 0 0;
+	display: block;
+	height: 50px;
+	position: absolute;
+	right: -50px;
+	top: 0;
+	width: 50px;
+}
+#style-switcher h2 a i {
+	color: #fff;
+	font-size: 26px;
+	left: 12px;
+	position: absolute;
+	top: 12px;
+}
+.colors {
+  padding-left: 7px;
+}
+.colors {
+  list-style: none;
+  margin: 0px 0px 10px 0px;
+  overflow: hidden;
+}
+.colors li {
+  float: left;
+}
+.colors li a {
+	border-radius: 100px;
+	cursor: pointer;
+	display: block;
+	height: 35px;
+	margin: 6px;
+	width: 35px;
+}
+.layout-style select {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  margin: 0 0 0 -5px;
+  color: #fff;
+  cursor: pointer;
+}
+#reset {
+  margin: 0 0 15px 2px;
+}
+#reset a {
+  color: #fff;
+  font-size: 12px;
+}
+.style1 {
+  background: #00c9fd;
+}
+.style2 {
+  background: #2193b0;
+}
+.style3 {
+  background: #753a88;
+}
+.style4 {
+  background: #de6262;
+}
+.style5 {
+  background: #ff5f6d;
+}
+.style6 {
+  background: #48b1bf;
+}
+.style7 {
+  background: #dd5e89;
+}
+.style8 {
+  background: #eb3349;
+}
+
+.colors li a.active {
+  box-shadow: 0 0 0px 2px #fff;
+}
+.icon-2x{
+	color: #fff;
+font-size:22px;
+line-height:30px;
+}
+
+@media only screen and (max-width: 768px) {
+  #style-switcher {
+    display: none;
+  }
+}
