@@ -3,6 +3,7 @@ layout: blog-post
 author: Cameron
 title: My Second Jekyll Blog
 excerpt: This isn't much more interesting.
+top-level-link: true
 ---
 
 This isn't a crazy _interesting_ blog post either. But it is a significant one or second one I mean. 
