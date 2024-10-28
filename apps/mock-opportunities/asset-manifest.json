@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hide/apps/mock-opportunities/static/css/main.e6c13ad2.css",
+    "main.js": "/hide/apps/mock-opportunities/static/js/main.271fce13.js",
+    "static/js/239.c67b6a4f.chunk.js": "/hide/apps/mock-opportunities/static/js/239.c67b6a4f.chunk.js",
+    "static/js/213.68aa09d1.chunk.js": "/hide/apps/mock-opportunities/static/js/213.68aa09d1.chunk.js",
+    "static/js/732.b6b0caaf.chunk.js": "/hide/apps/mock-opportunities/static/js/732.b6b0caaf.chunk.js",
+    "static/js/453.1b972bf8.chunk.js": "/hide/apps/mock-opportunities/static/js/453.1b972bf8.chunk.js",
+    "index.html": "/hide/apps/mock-opportunities/index.html",
+    "main.e6c13ad2.css.map": "/hide/apps/mock-opportunities/static/css/main.e6c13ad2.css.map",
+    "main.271fce13.js.map": "/hide/apps/mock-opportunities/static/js/main.271fce13.js.map",
+    "239.c67b6a4f.chunk.js.map": "/hide/apps/mock-opportunities/static/js/239.c67b6a4f.chunk.js.map",
+    "213.68aa09d1.chunk.js.map": "/hide/apps/mock-opportunities/static/js/213.68aa09d1.chunk.js.map",
+    "732.b6b0caaf.chunk.js.map": "/hide/apps/mock-opportunities/static/js/732.b6b0caaf.chunk.js.map",
+    "453.1b972bf8.chunk.js.map": "/hide/apps/mock-opportunities/static/js/453.1b972bf8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.271fce13.js"
+  ]
+}

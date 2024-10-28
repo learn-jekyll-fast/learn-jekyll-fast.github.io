@@ -1,0 +1,624 @@
+/* ************************************************************
+:: Template Name: Apolo - App Landing Page Template
+:: Template URI: http://theme-land.com/apolo
+:: Template Author Name: theme_land
+:: Template Author URI: hridoy1272@gmail.com
+:: Version: 1.0.0
+:: Created: 23 December 2019
+************************************************************ 
+*
+*
+******* :: INDEX OF RESPONSIVE CSS :: *******
+:: 1.0 COMMON CSS
+:: 2.0 HEADER AREA CSS
+:: 3.0 WELCOME AREA CSS
+:: 4.0 BENIFITS AREA CSS
+:: 5.0 FEATURES AREA CSS
+:: 6.0 SERVICE AREA CSS
+:: 7.0 DISCOVER AREA CSS
+:: 8.0 STATISTIC AREA CSS
+:: 9.0 MORE FEATURES AREA CSS
+:: 10.0 SCREENSHOTS AREA CSS
+:: 11.0 TESTIMONIAL AREA CSS
+:: 12.0 PRICE PLAN AREA CSS
+:: 13.0 DOWNLOAD AREA CSS
+:: 14.0 FOOTER AREA CSS
+****************************** */
+
+/* ******************************
+:: 1.0 COMMON CSS
+****************************** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ptb_180 {
+        padding: 130px 0;
+    }
+
+    .ptb_150 {
+        padding: 100px 0;
+    }
+
+    .ptb_100 {
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .store-buttons img {
+        max-width: 180px;
+    }
+
+    .store-buttons.store-black img {
+        max-width: 160px;
+    }
+
+    .res-margin {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ptb_180 {
+        padding: 130px 0;
+    }
+
+    .ptb_150,
+    .ptb_100 {
+        padding: 50px 0;
+    }
+
+    .res-margin {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .store-buttons img {
+        max-width: 160px;
+    }
+
+    .store-buttons.store-black img {
+        max-width: 140px;
+    }
+
+    .avatar-lg {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .ptb_180 {
+        padding: 80px 0;
+    }
+}
+
+/*SECTION HEADING*/
+@media (max-width: 991px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2em;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    p {
+        line-height: 26px;
+    }
+
+    .section-heading > h2 {
+        line-height: 1.5;
+    }
+}
+
+/*BUTTONS*/
+@media (max-width: 575px) {
+    .button-group a {
+        margin-top: 0;
+        margin-right: 5px;
+    }
+
+    .button-group .btn {
+        padding: 12px 20px
+    }
+}
+
+/* ******************************
+:: 2.0 HEADER AREA CSS
+****************************** */
+@media (min-width: 992px) {
+    .navbar .navbar-nav .nav-link {
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+    }
+
+    .navbar-sticky-on .navbar-nav .nav-link {
+        padding-top: 1.625rem;
+        padding-bottom: 1.625rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .main:before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background: #fff;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    [data-theme=dark] .main:before {
+        background: #01081f;
+    }
+
+    .canvas-open {
+        overflow: hidden;
+    }
+
+    .canvas-open .main:before {
+        width: 100%;
+        opacity: .95;
+        visibility: visible;
+    }
+
+    .navbar {
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar.active .navbar-inner {
+        right: 0;
+    }
+
+    .navbar .navbar-inner {
+        right: -100%;
+        -webkit-transition: right 0.3s 0.2s;
+        transition: right 0.3s 0.2s;
+    }
+
+    .navbar .nav-link {
+        border-bottom: 1px solid #eee;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    [data-theme=dark] .navbar .nav-link {
+        border-bottom: 1px solid #1E2745;
+    }
+
+    .navbar.navbar-dark .nav-link {
+        color: #54565a;
+    }
+
+    [data-theme=dark] .navbar.navbar-dark .nav-link {
+        color: #f6f8f9;
+    }
+
+    .navbar.navbar-dark .nav-link:hover,
+    .navbar.navbar-dark .nav-link:focus,
+    .navbar.navbar-dark .nav-link.active,
+    .navbar.navbar-dark .nav-link.current-menu-item {
+        color: #2c2e30;
+    }
+
+    [data-theme=dark] .navbar.navbar-dark .nav-link {
+        color: #e7eaee;
+    }
+
+    [data-theme=dark] .navbar.navbar-dark .nav-link:hover {
+        background: #01081f;
+    }
+
+    .navbar-inner {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 20rem;
+        padding-top: 2.5rem;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.15);
+        border-radius: 0;
+        overflow-y: auto;
+        z-index: 1050;
+    }
+
+    [data-theme=dark] .navbar-inner {
+        background: #151c32;
+    }
+
+    .navbar-inner .dropdown-menu:before {
+        content: none;
+    }
+
+    .navbar-inner .dropdown-menu {
+        border: medium none;
+        background: none;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        float: none;
+        margin: 0;
+        padding-top: 0;
+        position: static;
+    }
+
+    [data-theme=dark] .navbar-inner .dropdown-menu .dropdown-item {
+        color: #f6f8f9;
+    }
+
+    [data-theme=dark] .navbar-inner .dropdown-menu .dropdown-item:hover {
+        background: #01081f;
+    }
+
+    .nav-open .main-wrapper {
+        -webkit-transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-150px, 0, 0);
+    }
+
+    /*MOBILE NAVBAR TOGGLER*/
+    .navbar-toggler {
+        position: absolute !important;
+        top: auto;
+        right: 0;
+        bottom: auto;
+        left: auto;
+        border: none;
+        height: 100%;
+        width: 3.75rem;
+        background-image: none;
+        border-radius: 0;
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .navbar-inner .navbar-toggler {
+        position: absolute;
+        height: 2.5rem;
+        top: 0;
+    }
+
+    .navbar-toggler-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-image: none !important;
+    }
+
+    .navbar-toggler-icon,
+    .navbar-toggler-icon:before,
+    .navbar-toggler-icon:after {
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .navbar-toggler-icon {
+        height: 3px;
+        width: 50%;
+        background: #7e8085;
+        display: inline-block;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+        background: #fff;
+    }
+
+    .navbar-sticky-on .navbar-toggler-icon {
+        background: #7e8085;
+    }
+
+    .navbar-dark .navbar-toggler-icon.active:before,
+    .navbar-dark .navbar-toggler-icon.active:after {
+        background: #7e8085;
+    }
+
+    .navbar-toggler-icon:before,
+    .navbar-toggler-icon:after {
+        content: "";
+        background: #7e8085;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .navbar-dark .navbar-toggler-icon:before,
+    .navbar-dark .navbar-toggler-icon:after {
+        background: #fff;
+    }
+
+    .navbar-sticky-on .navbar-toggler-icon:before,
+    .navbar-sticky-on .navbar-toggler-icon:after {
+        background: #7e8085;
+    }
+
+    .navbar-toggler-icon::before {
+        top: -0.625rem;
+    }
+
+    .navbar-toggler-icon::after {
+        top: 0.625rem;
+    }
+
+    .navbar-toggler-icon.active {
+        background-color: transparent;
+        -webkit-transform: scale(0.85) rotate(270deg);
+        transform: scale(0.85) rotate(270deg);
+    }
+
+    .navbar-toggler-icon.active:before {
+        top: 0;
+        -webkit-transform: scale(0.65) rotate(45deg);
+        transform: scale(0.65) rotate(45deg);
+    }
+
+    .navbar-toggler-icon.active:after {
+        top: 0;
+        -webkit-transform: scale(0.65) rotate(-45deg);
+        transform: scale(0.65) rotate(-45deg);
+    }
+}
+
+/* ******************************
+:: 3.0 WELCOME AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .welcome-area {
+        height: 700px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-area {
+        height: 100% !important;
+        padding-top: 90px;
+    }
+
+    .welcome-intro {
+        margin-top: 30px;
+    }
+
+    .welcome-thumb {
+        max-width: 270px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .welcome-intro {
+        margin-top: 0;
+    }
+
+    .welcome-thumb {
+        max-width: 230px;
+    }
+}
+
+/* ******************************
+:: 4.0 BENIFITS AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .benifits-item {
+        text-align: center;
+    }
+}
+
+/* ******************************
+:: 5.0 FEATURES AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .features-slider-wrapper {
+        padding: 52px 18px 90px 21px;
+        max-width: 245px;
+    }
+}
+
+@media (max-width: 575px) {
+    .features-slider-wrapper {
+        padding: 52px 18px 90px 21px;
+        max-width: 220px;
+    }
+}
+
+/* ******************************
+:: 6.0 SERVICE AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .service-thumb > img,
+    .discover-thumb > img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .service-area {
+        background-size: cover;
+    }
+
+    .service-text > h2 span {
+        font-size: 20px;
+    }
+}
+
+/* ******************************
+:: 7.0 DISCOVER AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .discover-thumb > img {
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 575px) {
+    .discover-thumb > img {
+        margin-left: -100px;
+    }
+}
+
+/* ******************************
+:: 8.0 STATISTIC AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .single-counter span {
+        font-size: 3.5em;
+    }
+
+    .single-counter h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .single-counter span {
+        font-size: 2.5em;
+    }
+}
+
+/* ******************************
+:: 9.0 MORE FEATURES AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .more-features-thumb img {
+        max-width: 250px;
+    }
+
+    .more-features-thumb .thumb-one {
+        position: unset;
+    }
+}
+
+@media (max-width: 767px) {
+    .more-features-thumb img {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 575px) {
+    .more-features-thumb img {
+        max-width: 160px;
+    }
+
+    .more-features-thumb .thumb-two {
+        margin-left: 20px;
+    }
+}
+
+/* ******************************
+:: 10.0 SCREENSHOTS AREA CSS
+****************************** */
+@media (max-width: 575px) {
+    .screenshots-area {
+        background-size: cover;
+    }
+
+    .single-screenshot > img {
+        max-width: 270px;
+        margin: 0 auto;
+    }
+}
+
+/* ******************************
+:: 11.0 TESTIMONIAL AREA CSS
+****************************** */
+@media (max-width: 767px) {
+    .testimonial-area .owl-dots {
+        bottom: -15px;
+    }
+}
+
+/* ******************************
+:: 12.0 PRICE PLAN AREA CSS
+****************************** */
+@media only screen and (max-width: 767px) {
+    .price-plan-wrapper .plan-select {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-header .btn {
+        line-height: 1.4;
+    }
+}
+
+/* ******************************
+:: 13.0 DOWNLOAD AREA CSS
+****************************** */
+@media (max-width: 991px) {
+    .download-thumb {
+        max-width: 250px;
+    }
+}
+
+/* ******************************
+:: 14.0 FOOTER AREA CSS
+****************************** */
+@media (min-width: 992px) {
+    .footer-fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .footer-items {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-items {
+        margin-bottom: 30px;
+    }
+
+    .footer-area .col-12:last-of-type .footer-items {
+        margin-bottom: 0;
+    }
+}

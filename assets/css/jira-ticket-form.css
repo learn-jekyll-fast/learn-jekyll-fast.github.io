@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.2rem; /* Slightly smaller to fit better */
+  margin-bottom: 15px;
+  text-align: center;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-size: 0.47rem; /* Smaller label font size */
+  color: #333;
+  width: 40%; /* Increased label width for better alignment */
+  text-align: right;
+  margin-right: 5px;
+}
+
+input[type="text"], select {
+  width: 55%; /* Adjusted input width to match label width */
+  padding: 5px; /* Reduced padding for smaller inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.47rem; /* Smaller input font size */
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.47rem; /* Smaller textarea font size */
+  resize: vertical;
+  min-height: 70px; /* Slightly reduced min height for smaller space */
+}
+
+button {
+  width: calc(100% - 40px); /* Consistent margin around the button */
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem; /* Slightly smaller button font */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#success {
+  color: green;
+}
+
+#error {
+  color: red;
+}
+
+@media (max-width: 400px) {
+  .App {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1rem; /* Reduced title size for small screens */
+  }
+
+  label {
+      font-size: 0.47rem; /* Further reduced label size for small screens */
+  }
+
+  input[type="text"], select, textarea {
+      font-size: 0.47rem; /* Further reduced input and textarea size */
+  }
+
+  button {
+      font-size: 0.47rem; /* Further reduced button font size */
+  }
+}
