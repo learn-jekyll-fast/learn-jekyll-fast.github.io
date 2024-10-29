@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <div class="apps">
+    <div class="header-container">
+      <h4 class="header-title">Apps</h4>
+      <button class="create-app-button background-primary">
+        <span class="icon">+</span> Create App
+      </button>
+    </div>
+    <p class="description">
+      Create, Test and Publish
+    </p>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'dev')">In Development</button>
+      <button class="tablinks" onclick="openCity(event, 'test')">Ready for testing</button>
+      <button class="tablinks" onclick="openCity(event, 'prod')">Deployed</button>
+    </div>
+    <!-- Tab content -->
+    <div id="dev" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+    <div id="test" class="tabcontent">
+      <div style="display: flex; flex-wrap: wrap; ">
+        {% for post in site.posts %}
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card">
+            <div class="card-header">
+              <span class="material-icons-outlined" style="margin-right: 10px;">
+                dashboard
+              </span>
+              <h3 style="margin: 5px;">{{post.title}}</h3>
+            </div>
+            <p class="description"> {{ post.excerpt }} {{ post.excerpt }} {{ post.excerpt }}</p>
+            <div class="test-app-button">
+              <a href="{{ post.url }}">Test App</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div id="prod" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

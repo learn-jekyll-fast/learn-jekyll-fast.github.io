@@ -1,0 +1,136 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  margin: 10px 0px;
+  /* Adjust as needed */
+}
+
+.create-app-button {
+  /* Replace with actual color */
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+
+  /* Remove default button border */
+  cursor: pointer;
+  /* Change cursor on hover */
+}
+
+.description {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.icon {
+  margin-right: 8px;
+  /* Space between icon and text */
+}
+
+.apps {
+  padding: 20px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 450px;
+  border-radius: 10px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  width: 150px;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--primary-color);
+  color: #ffffff
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+
+}
+
+
+
+.card {
+  width: 300px;
+  height: 160px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  margin-top: 16px;
+  margin-left: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.avatar img {
+  width: 24px;
+  /* Adjust size as needed */
+  height: 24px;
+  /* Adjust size as needed */
+}
+
+.settings {
+  color: grey;
+}
+
+.settings-icon {
+  width: 20px;
+  /* Adjust size as needed */
+  height: 20px;
+  /* Adjust size as needed */
+}
+
+
+.description {
+  margin: 4px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.8em;
+  /* Limit to 2 lines */
+}
+
+.card-actions {
+  padding: 16px;
+}
+
+.test-app-button {
+  font-size: 14px;
+}

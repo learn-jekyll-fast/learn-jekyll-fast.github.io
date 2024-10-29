@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Third Jekyll Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawer Example</title>
+  <link rel="stylesheet" href="../css/leftStyle.css">
+  <link rel="stylesheet" href="../css/topStyle.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header id="appBar" class="app-bar">
+    <div class="toolbar">
+      <img id="logo" src="../assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
+      <button id="menu-icon" class="icon-button" aria-label="open drawer">
+        <span class="menu-icon" onclick="openNav()">☰</span>
+      </button>
+      <div class="app-bar-container ">
+        <input type="text" class="search-field" placeholder="Search">
+      </div>
+      <div class="notification-area">
+        <button class="icon-button" aria-label="show notifications">
+          <span class="badge">1</span>
+          <span class="notification-icon">🔔</span>
+        </button>
+        <button class="icon-button" aria-label="account of current user">
+          <span class="account-icon">👤</span>
+        </button>
+        <div class="user-info">
+          <span class="user-name">N.P</span>
+          <span class="user-role">Manager</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    <img id="logo" src="../assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+        dashboard
+      </span>Dashboard</a>
+    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+        dashboard
+      </span>Apps</a>
+    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+        dashboard
+      </span>Customization</a>
+  </div>
+  <div id="main" class="main-container">
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <div class="apps">
+    <div class="header-container">
+      <h4 class="header-title">Apps</h4>
+      <button class="create-app-button background-primary">
+        <span class="icon">+</span> Create App
+      </button>
+    </div>
+    <p class="description">
+      Create, Test and Publish
+    </p>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'dev')">In Development</button>
+      <button class="tablinks" onclick="openCity(event, 'test')">Ready for testing</button>
+      <button class="tablinks" onclick="openCity(event, 'prod')">Deployed</button>
+    </div>
+    <!-- Tab content -->
+    <div id="dev" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+    <div id="test" class="tabcontent">
+      <div style="display: flex; flex-wrap: wrap; ">
+        
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card">
+            <div class="card-header">
+              <span class="material-icons-outlined" style="margin-right: 10px;">
+                dashboard
+              </span>
+              <h3 style="margin: 5px;">My Third Jekyll Blog</h3>
+            </div>
+            <p class="description"> This isn't much more interesting. This isn't much more interesting. This isn't much more interesting.</p>
+            <div class="test-app-button">
+              <a href="/2024/09/09/jekyll-blog-post1.html">Test App</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card">
+            <div class="card-header">
+              <span class="material-icons-outlined" style="margin-right: 10px;">
+                dashboard
+              </span>
+              <h3 style="margin: 5px;">My Second Jekyll Blog</h3>
+            </div>
+            <p class="description"> This isn't much more interesting. This isn't much more interesting. This isn't much more interesting.</p>
+            <div class="test-app-button">
+              <a href="/2020/11/12/second-blog-post.html">Test App</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card">
+            <div class="card-header">
+              <span class="material-icons-outlined" style="margin-right: 10px;">
+                dashboard
+              </span>
+              <h3 style="margin: 5px;">My First Jekyll Blog on GitHub Page</h3>
+            </div>
+            <p class="description"> Check out my first Jekyll blog post on GitHub Pages! Check out my first Jekyll blog post on GitHub Pages! Check out my first Jekyll blog post on GitHub Pages!</p>
+            <div class="test-app-button">
+              <a href="/2020/11/11/jekyll-blog-post.html">Test App</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div id="prod" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
+
+  </div>
+  <div>
+    <div
+  style="z-index: 1202; padding: 0 14px; height: 70px; background-color: #2C3C4C; position: fixed; bottom: 0; width: 100%;">
+  <div style="display: flex; flex-direction: row-reverse; margin-top: -20px; margin-right: 20px;">
+    <button class="background-primary"
+      style="color: #fff;  border: none; border-radius: 50px; width: 40px; height: 40px; ;">
+      <span style="font-size: 24px;">+</span> <!-- AddIcon -->
+    </button>
+    <button class="background-primary"
+      style="height: 40px; text-transform: inherit; color: #fff; margin-right: 20px;border: none; border-radius: 50px; padding: 5px 20px; display: flex; align-items: center; ">
+      <span class="material-icons-outlined">
+        location_on
+      </span>
+      Digital Innovation Center
+    </button>
+  </div>
+  <div style="display: flex; height: 20px; justify-content: center; align-items: center;">
+    <p style="text-align: center; color: white;">© 2024 Align HCM, All Rights Reserved</p>
+  </div>
+</div>
+  </div>
+
+
+  <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "200px";
+      document.getElementById("main").style.marginLeft = "200px";
+      document.getElementById("appBar").style.marginLeft = "200px";
+      document.getElementById("menu-icon").style.display = "none";
+      document.getElementById("logo").style.display = "none";
+
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "60px";
+      document.getElementById("main").style.marginLeft = "60px";
+      document.getElementById("appBar").style.marginLeft = "0px";
+
+      document.getElementById("menu-icon").style.display = "block";
+      document.getElementById("logo").style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
+</body>
+
+</html>
