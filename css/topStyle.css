@@ -1,11 +1,5 @@
 /* topStyle.css */
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-}
-
 .app-bar-container {
   flex-grow: 1;
 

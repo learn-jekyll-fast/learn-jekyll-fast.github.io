@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawer Example</title>
+  <link rel="stylesheet" href="../css/leftStyle.css">
+  <link rel="stylesheet" href="../css/topStyle.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+
+<body>
+  <header id="header" class="app-bar">
+    <div class="toolbar">
+      <img id="logo" src="../assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
+      <button id="menu-icon" class="icon-button" aria-label="open drawer">
+        <span class="menu-icon" onclick="openNav()">☰</span>
+      </button>
+      <div class="app-bar-container ">
+        <input type="text" class="search-field" placeholder="Search">
+      </div>
+      <div class="notification-area">
+        <button class="icon-button" aria-label="show notifications">
+          <span class="badge">1</span>
+          <span class="notification-icon">🔔</span>
+        </button>
+        <button class="icon-button" aria-label="account of current user">
+          <span class="account-icon">👤</span>
+        </button>
+        <div class="user-info">
+          <span class="user-name">N.P</span>
+          <span class="user-role">Manager</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    <img id="logo" src="../assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="nav-list" onload="navListClick(0)">
+      <a id="dashboard" href="#" class="active" onclick="navListClick(0)"><span
+          class="material-icons-outlined text-primary" style="margin-right: 20px;">
+          dashboard
+        </span>Dashboard</a>
+      <a id="apps" href="#" onclick="navListClick(1)"><span class="material-icons-outlined text-primary"
+          style="margin-right: 20px;">
+          dashboard
+        </span>Apps</a>
+      <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+          dashboard
+        </span>Customization</a>
+    </div>
+  </div>
+  <div id="footer">
+    {% include footer.html %}
+  </div>
+  <div id="container" class="dashboard-container">
+    <div id="dashboard-view" class="main-container hidden">
+      {% include dashboard.html %}
+    </div>
+    <div id="apps-view" class="main-container hidden">
+      {% include apps.html %}
+    </div>
+    <div id="main" class="main-container hidden">
+      {{content}}
+    </div>
+
+  </div>
+  <script src="../js/home.js"></script>
+</body>
+
+</html>

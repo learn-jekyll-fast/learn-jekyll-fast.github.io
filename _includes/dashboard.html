@@ -1,83 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drawer Example</title>
-  <link rel="stylesheet" href="../css/leftStyle.css">
-  <link rel="stylesheet" href="../css/topStyle.css">
-  <link rel="stylesheet" href="../css/main.css">
-</head>
-
 <body>
-  <header id="appBar" class="app-bar">
-    <div class="toolbar">
-      <img id="logo" src="../assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
-      <button id="menu-icon" class="icon-button" aria-label="open drawer">
-        <span class="menu-icon" onclick="openNav()">☰</span>
+  <div class="p20">
+    <div class="header-container">
+      <h4 class="header-title">Hello, ...</h4>
+      <button class="create-app-button background-primary">
+        <span class="icon">+</span> Add a Widget
       </button>
-      <div class="app-bar-container ">
-        <input type="text" class="search-field" placeholder="Search">
-      </div>
-      <div class="notification-area">
-        <button class="icon-button" aria-label="show notifications">
-          <span class="badge">1</span>
-          <span class="notification-icon">🔔</span>
-        </button>
-        <button class="icon-button" aria-label="account of current user">
-          <span class="account-icon">👤</span>
-        </button>
-        <div class="user-info">
-          <span class="user-name">N.P</span>
-          <span class="user-role">Manager</span>
-        </div>
-      </div>
     </div>
-  </header>
-  <div id="mySidenav" class="sidenav">
-    <img id="logo" src="../assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
-        dashboard
-      </span>Dashboard</a>
-    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
-        dashboard
-      </span>Apps</a>
-    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
-        dashboard
-      </span>Customization</a>
-  </div>
-  <div id="main" class="main-container">
-    {% include apps.html %}
-
-  </div>
-  <div>
-    {% include footer.html %}
+    <p class="description">
+      Welcome to the Align HCM Portal dashboard
+    </p>
+    <div>
+      
+    </div>
   </div>
 
-
-  <script>
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "200px";
-      document.getElementById("main").style.marginLeft = "200px";
-      document.getElementById("appBar").style.marginLeft = "200px";
-      document.getElementById("menu-icon").style.display = "none";
-      document.getElementById("logo").style.display = "none";
-
-    }
-
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "60px";
-      document.getElementById("main").style.marginLeft = "60px";
-      document.getElementById("appBar").style.marginLeft = "0px";
-
-      document.getElementById("menu-icon").style.display = "block";
-      document.getElementById("logo").style.display = "block";
-    }
-  </script>
 </body>
 
 </html>

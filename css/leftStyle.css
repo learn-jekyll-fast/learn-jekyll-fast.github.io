@@ -45,6 +45,10 @@
   background-color: #f1f1f1;
 }
 
+.active {
+  background-color: #f1f1f1;
+}
+
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;

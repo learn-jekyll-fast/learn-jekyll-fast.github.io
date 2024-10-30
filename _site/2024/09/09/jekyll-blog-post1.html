@@ -11,7 +11,8 @@
 </head>
 
 <body>
-  <!DOCTYPE html>
+  <div class="full-height">
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,10 +22,13 @@
   <link rel="stylesheet" href="../css/leftStyle.css">
   <link rel="stylesheet" href="../css/topStyle.css">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
+
 <body>
-  <header id="appBar" class="app-bar">
+  <header id="header" class="app-bar">
     <div class="toolbar">
       <img id="logo" src="../assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
       <button id="menu-icon" class="icon-button" aria-label="open drawer">
@@ -51,25 +55,76 @@
   <div id="mySidenav" class="sidenav">
     <img id="logo" src="../assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
-        dashboard
-      </span>Dashboard</a>
-    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
-        dashboard
-      </span>Apps</a>
-    <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
-        dashboard
-      </span>Customization</a>
+    <div id="nav-list" onload="navListClick(0)">
+      <a id="dashboard" href="#" class="active" onclick="navListClick(0)"><span
+          class="material-icons-outlined text-primary" style="margin-right: 20px;">
+          dashboard
+        </span>Dashboard</a>
+      <a id="apps" href="#" onclick="navListClick(1)"><span class="material-icons-outlined text-primary"
+          style="margin-right: 20px;">
+          dashboard
+        </span>Apps</a>
+      <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+          dashboard
+        </span>Customization</a>
+    </div>
   </div>
-  <div id="main" class="main-container">
+  <div id="footer">
     <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/styles.css">
-</head>
+<body>
+  <div
+    style="z-index: 1202; padding: 0 14px; height: 70px; background-color: #2C3C4C; position: fixed; bottom: 0; width: 100%;">
+    <div style="display: flex; flex-direction: row-reverse; margin-top: -20px; margin-right: 20px;">
+      <button class="background-primary"
+        style="color: #fff;  border: none; border-radius: 50px; width: 40px; height: 40px; ;">
+        <span style="font-size: 24px;">+</span> <!-- AddIcon -->
+      </button>
+      <button class="background-primary"
+        style="height: 40px; text-transform: inherit; color: #fff; margin-right: 20px;border: none; border-radius: 50px; padding: 5px 20px; display: flex; align-items: center; ">
+        <span class="material-icons-outlined">
+          location_on
+        </span>
+        Digital Innovation Center
+      </button>
+    </div>
+    <div style="display: flex; height: 20px; justify-content: center; align-items: center;">
+      <p style="text-align: center; color: white;">© 2024 Align HCM, All Rights Reserved</p>
+    </div>
+  </div>
+</body>
+
+</html>
+  </div>
+  <div id="container" class="dashboard-container">
+    <div id="dashboard-view" class="main-container hidden">
+      <!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <div class="p20">
+    <div class="header-container">
+      <h4 class="header-title">Hello, ...</h4>
+      <button class="create-app-button background-primary">
+        <span class="icon">+</span> Add a Widget
+      </button>
+    </div>
+    <p class="description">
+      Welcome to the Align HCM Portal dashboard
+    </p>
+    <div>
+      
+    </div>
+  </div>
+
+</body>
+
+</html>
+    </div>
+    <div id="apps-view" class="main-container hidden">
+      <!DOCTYPE html>
+<html lang="en">
 
 <body>
   <div class="apps">
@@ -98,12 +153,17 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card">
             <div class="card-header">
-              <span class="material-icons-outlined" style="margin-right: 10px;">
-                dashboard
+              <div class="align-center">
+                <span class="material-icons-outlined" style="margin-right: 10px;">
+                  dashboard
+                </span>
+                <h3 style="margin: 5px;">My Third Jekyll Blog</h3>
+              </div>
+              <span class="material-icons-outlined">
+                settings
               </span>
-              <h3 style="margin: 5px;">My Third Jekyll Blog</h3>
             </div>
-            <p class="description"> This isn't much more interesting. This isn't much more interesting. This isn't much more interesting.</p>
+            <p class="description"> This isn't much more interesting.</p>
             <div class="test-app-button">
               <a href="/2024/09/09/jekyll-blog-post1.html">Test App</a>
             </div>
@@ -113,12 +173,17 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card">
             <div class="card-header">
-              <span class="material-icons-outlined" style="margin-right: 10px;">
-                dashboard
+              <div class="align-center">
+                <span class="material-icons-outlined" style="margin-right: 10px;">
+                  dashboard
+                </span>
+                <h3 style="margin: 5px;">My Second Jekyll Blog</h3>
+              </div>
+              <span class="material-icons-outlined">
+                settings
               </span>
-              <h3 style="margin: 5px;">My Second Jekyll Blog</h3>
             </div>
-            <p class="description"> This isn't much more interesting. This isn't much more interesting. This isn't much more interesting.</p>
+            <p class="description"> This isn't much more interesting.</p>
             <div class="test-app-button">
               <a href="/2020/11/12/second-blog-post.html">Test App</a>
             </div>
@@ -128,12 +193,17 @@
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card">
             <div class="card-header">
-              <span class="material-icons-outlined" style="margin-right: 10px;">
-                dashboard
+              <div class="align-center">
+                <span class="material-icons-outlined" style="margin-right: 10px;">
+                  dashboard
+                </span>
+                <h3 style="margin: 5px;">My First Jekyll Blog on GitHub Page</h3>
+              </div>
+              <span class="material-icons-outlined">
+                settings
               </span>
-              <h3 style="margin: 5px;">My First Jekyll Blog on GitHub Page</h3>
             </div>
-            <p class="description"> Check out my first Jekyll blog post on GitHub Pages! Check out my first Jekyll blog post on GitHub Pages! Check out my first Jekyll blog post on GitHub Pages!</p>
+            <p class="description"> Check out my first Jekyll blog post on GitHub Pages!</p>
             <div class="test-app-button">
               <a href="/2020/11/11/jekyll-blog-post.html">Test App</a>
             </div>
@@ -146,82 +216,23 @@
         <p>Tokyo is the capital of Japan.</p>
       </div>
     </div>
-
-    <script>
-      function openCity(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-    </script>
+  </div>
 
 </body>
 
 </html>
+    </div>
+    <div id="main" class="main-container hidden">
+      <p>This is Now POST Hello</p>
+
+    </div>
 
   </div>
-  <div>
-    <div
-  style="z-index: 1202; padding: 0 14px; height: 70px; background-color: #2C3C4C; position: fixed; bottom: 0; width: 100%;">
-  <div style="display: flex; flex-direction: row-reverse; margin-top: -20px; margin-right: 20px;">
-    <button class="background-primary"
-      style="color: #fff;  border: none; border-radius: 50px; width: 40px; height: 40px; ;">
-      <span style="font-size: 24px;">+</span> <!-- AddIcon -->
-    </button>
-    <button class="background-primary"
-      style="height: 40px; text-transform: inherit; color: #fff; margin-right: 20px;border: none; border-radius: 50px; padding: 5px 20px; display: flex; align-items: center; ">
-      <span class="material-icons-outlined">
-        location_on
-      </span>
-      Digital Innovation Center
-    </button>
-  </div>
-  <div style="display: flex; height: 20px; justify-content: center; align-items: center;">
-    <p style="text-align: center; color: white;">© 2024 Align HCM, All Rights Reserved</p>
-  </div>
-</div>
-  </div>
-
-
-  <script>
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "200px";
-      document.getElementById("main").style.marginLeft = "200px";
-      document.getElementById("appBar").style.marginLeft = "200px";
-      document.getElementById("menu-icon").style.display = "none";
-      document.getElementById("logo").style.display = "none";
-
-    }
-
-    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "60px";
-      document.getElementById("main").style.marginLeft = "60px";
-      document.getElementById("appBar").style.marginLeft = "0px";
-
-      document.getElementById("menu-icon").style.display = "block";
-      document.getElementById("logo").style.display = "block";
-    }
-  </script>
+  <script src="../js/home.js"></script>
 </body>
 
 </html>
+  </div>
 </body>
 
 </html>

@@ -32,8 +32,13 @@
   /* Space between icon and text */
 }
 
+.dashboard-container {
+  margin-left: 60px;
+}
+
 .apps {
   padding: 20px;
+  overflow-x: hidden;
 }
 
 /* Style the tab */
@@ -96,6 +101,7 @@
   display: flex;
   align-items: center;
   margin: 0px;
+  justify-content: space-between;
 }
 
 .avatar img {
