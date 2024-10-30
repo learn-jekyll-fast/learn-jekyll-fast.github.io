@@ -18,6 +18,19 @@ body {
   padding: 20px;
 }
 
+.pt5 {
+  padding-top: 5px;
+}
+
+.m0 {
+  margin: 0px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .full-height {
   height: 100%;
   background: var(--background-gray);

@@ -140,3 +140,59 @@
 .test-app-button {
   font-size: 14px;
 }
+
+.revenue-card {
+  width: 260px;
+  height: 120px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  margin-top: 16px;
+  margin-left: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.status-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-box {
+  min-width: 90px;
+  padding: 8px;
+  /* Adjusted for consistency */
+  border-radius: 20px;
+  background-color: #B3DFC9;
+  /* Change to #FFEBEE for down status */
+}
+
+.status-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.status-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border: 1px solid;
+  /* Add border color dynamically */
+  border-radius: 50%;
+}
+
+.status-percentage {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: green;
+  /* Change to red for down status */
+}
