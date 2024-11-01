@@ -1,5 +1,5 @@
 ---
-layout: minimal-app
+layout: align
 title:  "Site Builder X"
 blurb: "Accelerate product devleopment. Get miles ahead of the competition!"
 ---

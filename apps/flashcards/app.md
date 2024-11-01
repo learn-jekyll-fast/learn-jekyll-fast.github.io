@@ -1,5 +1,5 @@
 ---
-layout: minimal-app
+layout: align
 title:  "Flashcards!"
 blurb: "Test your knowledge of key concepts with these flashcards."
 ---

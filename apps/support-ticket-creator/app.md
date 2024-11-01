@@ -1,6 +1,6 @@
 ---
-layout: minimal-app
-title:  "ChatBot Training"
+layout: align
+title:  "Support Ticket"
 blurb: "Train you ChatBot so it knows everything about you!"
 ---
       

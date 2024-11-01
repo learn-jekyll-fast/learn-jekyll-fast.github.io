@@ -1,5 +1,5 @@
 ---
-layout: minimal-app
+layout: align
 title:  "My Calcluator"
 blurb: "Let's see if this adds up! My hunch is that it will!"
 ---

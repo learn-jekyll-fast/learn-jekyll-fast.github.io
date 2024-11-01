@@ -1,5 +1,5 @@
 ---
-layout: minimal-app
+layout: align
 title: "Countdown Timer"
 blurb: "Do you have the time? This app will let you know."
 ---

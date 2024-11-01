@@ -1,5 +1,5 @@
 ---
-layout: minimal-app-green
+layout: align
 title: "Opportunities Builder Green"
 blurb: "We'll quickly build out opportunities for you, but with a new look."
 ---

@@ -1,5 +1,5 @@
 ---
-layout: minimal-app
+layout: align
 title: "Checkers"
 blurb: "This is an app the let's us play checkers"
 ---

@@ -1,5 +1,5 @@
 ---
-layout: minimal-app
+layout: align
 title:  "Rapid Deploy"
 blurb: "Provide a zip file. We'll do the rest."
 ---

@@ -1,6 +1,6 @@
 ---
 companyname: "IBM Canada"
-layout: "minimal"
+layout: "align"
 ---
 
 ## Wiki Activation
