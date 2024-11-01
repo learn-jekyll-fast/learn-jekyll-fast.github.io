@@ -6,14 +6,21 @@
   <title>{{ page.title }}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <link rel="stylesheet" href="/css/leftStyle.css">
+  <link rel="stylesheet" href="/css/topStyle.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
 <body>
-  <div class="full-height">
+  <div id="home" class="full-height">
+    {% include header.html %}
+    {% include side-drawer.html %}
     {% include homepage.html %}
+    {% include footer.html %}
   </div>
+  <script src="/js/home.js"></script>
 </body>
 
 </html>

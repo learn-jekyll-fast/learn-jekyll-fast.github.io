@@ -65,10 +65,10 @@
 
 .notification .badge {
   position: absolute;
-  top: 1px;
+  top: 3px;
   right: -6px;
-  width: 21px;
-  height: 11px;
+  width: 20px;
+  height: 8px;
   border-radius: 50%;
   background: red;
   color: white;

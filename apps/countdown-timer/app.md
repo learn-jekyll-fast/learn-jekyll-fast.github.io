@@ -1,6 +1,7 @@
 ---
 layout: align
 title: "Countdown Timer"
+tab: app
 blurb: "Do you have the time? This app will let you know."
 ---
 

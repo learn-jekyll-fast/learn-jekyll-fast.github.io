@@ -1,6 +1,7 @@
 ---
 layout: align
 title:  "Rapid Deploy"
+tab: app
 blurb: "Provide a zip file. We'll do the rest."
 ---
       

@@ -33,7 +33,9 @@
 }
 
 .dashboard-container {
-  margin-left: 60px;
+  margin-left: 65px;
+  zoom: 90%;
+  padding-bottom: 4rem;
 }
 
 .apps {

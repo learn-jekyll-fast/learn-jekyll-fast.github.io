@@ -1,6 +1,7 @@
 ---
 layout: align
 title:  "Support Ticket"
+tab: app
 blurb: "Train you ChatBot so it knows everything about you!"
 ---
       

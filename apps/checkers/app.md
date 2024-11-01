@@ -1,6 +1,7 @@
 ---
 layout: align
 title: "Checkers"
+tab: app
 blurb: "This is an app the let's us play checkers"
 ---
 

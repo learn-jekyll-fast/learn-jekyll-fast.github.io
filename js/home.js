@@ -1,6 +1,7 @@
 function init() {
   navListClick(0);
   openCity(event, 'dev')
+  console.log('on Load');
 }
 window.onload = init;
 
@@ -24,7 +25,14 @@ function navListClick(index) {
       document.getElementById("dashboard-view").classList.add('hidden')
 
       break;
+    case 2:
+      element = document.getElementById("apps-view");  // Get the DIV element
+      element.classList.remove("hidden"); // Remove mystyle class from DIV
+      element.classList.add("visible"); // Add newone class to DIV
+      document.getElementById("dashboard-view").classList.remove('visible')
+      document.getElementById("dashboard-view").classList.add('hidden')
 
+      break;
     default:
       break;
   }

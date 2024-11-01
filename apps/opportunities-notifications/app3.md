@@ -1,6 +1,7 @@
 ---
 layout: align
 title: "Opportunities Builder Green"
+tab: app
 blurb: "We'll quickly build out opportunities for you, but with a new look."
 ---
 

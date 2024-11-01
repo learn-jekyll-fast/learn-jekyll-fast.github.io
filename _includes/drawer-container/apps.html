@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <div class="apps">
+
+    <div class="header-container">
+      <h4 class="header-title">Apps</h4>
+      <button class="create-app-button background-primary">
+        <span class="icon">+</span> Create App
+      </button>
+    </div>
+    <p class="description">
+      Create, Test and Publish
+    </p>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'dev')">In Development</button>
+      <button class="tablinks" onclick="openCity(event, 'test')">Ready for testing</button>
+      <button class="tablinks" onclick="openCity(event, 'prod')">Deployed</button>
+    </div>
+    <!-- Tab content -->
+    <div id="dev" class="tabcontent">
+
+    </div>
+    <div id="test" class="tabcontent">
+      <div style="display: flex; flex-wrap: wrap; padding-bottom: 60px; ">
+        {% for page in site.pages %}
+        {% if page.path contains 'apps/' %}
+        <div class="card">
+          <div class="card-header">
+            <div class="align-center">
+              <span class="material-icons-outlined" style="margin-right: 10px;">
+                dashboard
+              </span>
+              <h3 style="margin: 5px;">{{ page.title }}</h3>
+            </div>
+            <span class="material-icons-outlined">
+              settings
+            </span>
+          </div>
+          <p class="description"> {{ page.blurb }}</p>
+          <div class="test-app-button">
+            <a href={{page.url}}>Test App</a>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div id="prod" class="tabcontent">
+    </div>
+
+  </div>
+</body>
+
+</html>

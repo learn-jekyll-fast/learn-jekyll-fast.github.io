@@ -1,7 +1,8 @@
 ---
 layout: align
-title:  "ChatBot Training"
-blurb: "Train you ChatBot so it knows everything about you!"
+title:  ChatBot Training
+tab: app
+blurb: Train you ChatBot so it knows everything about you!
 ---
       
 <link rel="manifest" href="manifest.json"/>
