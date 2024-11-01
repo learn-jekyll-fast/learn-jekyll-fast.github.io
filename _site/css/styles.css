@@ -164,7 +164,7 @@
 
 .status-box {
   min-width: 90px;
-  padding: 8px;
+  padding: 0px 4px;
   /* Adjusted for consistency */
   border-radius: 20px;
   background-color: #B3DFC9;

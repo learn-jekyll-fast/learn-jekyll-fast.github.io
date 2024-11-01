@@ -19,12 +19,10 @@
     </div>
     <!-- Tab content -->
     <div id="dev" class="tabcontent">
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
-    </div>
-    <div id="test" class="tabcontent">
-      <div style="display: flex; flex-wrap: wrap; ">
-        {% for post in site.posts %}
+
+      <div style="display: flex; flex-wrap: wrap; padding-bottom: 60px; ">
+        {% for page in site.pages %}
+        {% if page.path contains 'apps/' %}
         <div class="col-lg-4 col-md-6 col-12">
           <div class="card">
             <div class="card-header">
@@ -32,18 +30,46 @@
                 <span class="material-icons-outlined" style="margin-right: 10px;">
                   dashboard
                 </span>
-                <h3 style="margin: 5px;">{{post.title}}</h3>
+                <h3 style="margin: 5px;">{{ page.title }}</h3>
               </div>
               <span class="material-icons-outlined">
                 settings
               </span>
             </div>
-            <p class="description"> {{ post.excerpt }}</p>
+            <p class="description"> {{ page.excerpt }}</p>
             <div class="test-app-button">
-              <a href="{{ post.url }}">Test App</a>
+              <a href="./applications.html">Test App</a>
             </div>
           </div>
         </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div id="test" class="tabcontent">
+      <div style="display: flex; flex-wrap: wrap; padding-bottom: 60px; ">
+        {% for page in site.pages %}
+        {% if page.path contains 'apps/' %}
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="align-center">
+                <span class="material-icons-outlined" style="margin-right: 10px;">
+                  dashboard
+                </span>
+                <h3 style="margin: 5px;">{{ page.title }}</h3>
+              </div>
+              <span class="material-icons-outlined">
+                settings
+              </span>
+            </div>
+            <p class="description"> {{ page.excerpt }}</p>
+            <div class="test-app-button">
+              <a href="./applications.html">Test App</a>
+            </div>
+          </div>
+        </div>
+        {% endif %}
         {% endfor %}
       </div>
       <div id="prod" class="tabcontent">

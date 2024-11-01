@@ -18,7 +18,7 @@
 .toolbar {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 0px 5px;
   overflow-x: hidden;
 }
 
@@ -54,13 +54,29 @@
   align-items: center;
 }
 
-.badge {
-  background-color: red;
+.notification {
   color: white;
-  border-radius: 50%;
-  padding: 2px 5px;
-  margin-right: 5px;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
 }
+
+.notification .badge {
+  position: absolute;
+  top: 1px;
+  right: -6px;
+  width: 21px;
+  height: 11px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  text-align: center;
+  padding-bottom: inherit;
+}
+
+
 
 .user-info {
   display: flex;
