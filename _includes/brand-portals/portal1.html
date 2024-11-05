@@ -1,0 +1,33 @@
+<!-- HTML Structure -->
+<div class="portal-step">
+  <div class="inner-stack">
+    <h4 class="title">Tell Us About Your Business</h4>
+    <p class="description">Just drop in your company name and website, and we’ll work our magic to speed up your setup!</p>
+    
+    <label class="label">
+      Company Name<span class="required">*</span>
+    </label>
+    <input
+      type="text"
+      required
+      class="text-field"
+      placeholder="Enter your company name"
+      value="" <!-- Bind this to your JavaScript state -->
+      oninput="setCompanyName(this.value)" <!-- Update this function accordingly -->
+    />
+    
+    <label class="label">
+      Company Website URL<span class="required">*</span>
+    </label>
+    <input
+      type="text"
+      required
+      class="text-field"
+      placeholder="Enter company website URL"
+      value="" <!-- Bind this to your JavaScript state -->
+      oninput="setCompanyWebsite(this.value)" <!-- Update this function accordingly -->
+    />
+    
+    <button class="footer-button" onclick="handleSubmit()">Next</button>
+  </div>
+</div>

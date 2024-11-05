@@ -1,6 +1,65 @@
 ---
-layout: align
+layout: landing-page
 title: "Scrumtuous Blog on Agile, Scrum & DevOps"
 blurb: "Here are all of our tasty blog posts."
 tab: dashboard
+tagline: Shape with Align HCM
+tagline-subheading: This is the sub-heading
+price-level-1: Silver Level
+price-level-2: Gold Level
+price-level-3: Platinum Level
+price-level-4: Diamond Level
 ---
+
+<script src="https://js.stripe.com/v3/"></script>
+
+<script>
+  var userDataa;
+  var stripe = Stripe('pk_test_51Q83t4E1kHJTQOxYgrnPbqIfdrciqFTrb8mfYG0kTBN2UfjqdcoT4VXmooQLzgWIJMvVYlBWu3d34UeK5dc5AdhJ001IdUfhbx');
+  stripe.products.list().then(function (response) {
+    userDataa = response.data;
+    console.log('DATA:   ' + JSON.stringify(userDataa));
+    var table = document.createElement('p');
+    table = userDataa;
+    document.body.appendChild(table);
+  }).catch(function (error) {
+    console.error("Error fetching products:", error);
+  });
+
+  // Find the Silver Level product
+  // var silverLevelProduct = userData.allproducts.data.find(function (product) {
+  //   return product.name === "{{page.price-level-2}}";
+  // });
+
+  // // Check if the product exists
+  // if (silverLevelProduct) {
+  //   // Create a table element
+  //   var table = document.createElement('table');
+  //   table.border = '1'; // Add border for visibility
+
+  //   // Create table header
+  //   var header = table.createTHead();
+  //   var headerRow = header.insertRow(0);
+  //   var headers = ["ID", "Name", "Description", "Price", "Active"];
+  //   headers.forEach(function (headerText) {
+  //     var cell = headerRow.insertCell();
+  //     cell.textContent = headerText;
+  //   });
+
+  //   // Create a row for the Silver Level product
+  //   var row = table.insertRow();
+  //   row.insertCell(0).textContent = silverLevelProduct.id;
+  //   row.insertCell(1).textContent = silverLevelProduct.name;
+  //   row.insertCell(2).textContent = silverLevelProduct.description || "N/A"; // Handle null description
+  //   row.insertCell(3).textContent = silverLevelProduct.default_price; // Assuming you want to show the default price
+  //   row.insertCell(4).textContent = silverLevelProduct.active ? "Yes" : "No"; // Show active status
+
+  //   // Append the table to the body or a specific element
+  //   document.body.appendChild(table);
+  // } else {
+  //   console.log("Silver Level product not found.");
+  // }
+
+
+
+</script>
