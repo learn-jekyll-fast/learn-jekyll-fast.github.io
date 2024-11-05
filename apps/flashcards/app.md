@@ -1,5 +1,4 @@
 ---
-layout: align
 title:  "Flashcards!"
 tab: app
 blurb: "Test your knowledge of key concepts with these flashcards."

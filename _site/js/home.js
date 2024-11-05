@@ -1,7 +1,5 @@
 function init() {
   navListClick(0);
-  openCity(event, 'dev')
-  console.log('on Load');
 }
 window.onload = init;
 
@@ -49,9 +47,9 @@ function navListClick(index) {
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "200px";
-  document.getElementById("container").style.marginLeft = "200px";
-  document.getElementById("header").style.marginLeft = "200px";
+  document.getElementById("mySidenav").style.width = "210px";
+  document.getElementById("container").style.marginLeft = "225px";
+  document.getElementById("header").style.marginLeft = "210px";
   document.getElementById("menu-icon").style.display = "none";
   document.getElementById("logo").style.display = "none";
 }
@@ -84,3 +82,13 @@ function openCity(evt, cityName) {
   document.getElementById('test').style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+  function selectRating(selected) {
+    // Remove 'text-primary' class from all spans
+    const spans = document.querySelectorAll('.modal-radio-buttons');
+    spans.forEach(span => {
+      span.classList.remove('text-primary');
+    });
+    // Add 'text-primary' class to the selected span
+    selected.classList.add('text-primary');
+  }

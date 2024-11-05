@@ -16,11 +16,36 @@
           class="material-icons-outlined text-primary" style="margin-right: 20px;">
           dashboard
         </span>Apps</a>
-      <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+      <a id="customization" href="#" onclick="subNav()"><span class="material-icons-outlined text-primary"
+          style="margin-right: 20px;">
           dashboard
-        </span>Customization</a>
+        </span>Customization<span class="material-icons-outlined" style="margin-left: 10px;">
+          arrow_drop_down
+        </span></a>
+      <div id="sub-item" class="dropdown-container" style="display: none;">
+        <a href=#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+            dashboard
+          </span>Portal Branding</a>
+        <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+            dashboard
+          </span>Sales Page</a>
+      </div>
     </div>
   </div>
+  <script>
+    function subNav() {
+      console.log('CLicked');
+      var dropdown = document.getElementById("sub-item");
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+
+
+    }
+
+  </script>
 </body>
 
 </html>

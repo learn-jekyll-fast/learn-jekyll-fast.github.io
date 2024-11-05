@@ -64,11 +64,36 @@
           class="material-icons-outlined text-primary" style="margin-right: 20px;">
           dashboard
         </span>Apps</a>
-      <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+      <a id="customization" href="#" onclick="subNav()"><span class="material-icons-outlined text-primary"
+          style="margin-right: 20px;">
           dashboard
-        </span>Customization</a>
+        </span>Customization<span class="material-icons-outlined" style="margin-left: 10px;">
+          arrow_drop_down
+        </span></a>
+      <div id="sub-item" class="dropdown-container" style="display: none;">
+        <a href=#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+            dashboard
+          </span>Portal Branding</a>
+        <a href="#"><span class="material-icons-outlined text-primary" style="margin-right: 20px;">
+            dashboard
+          </span>Sales Page</a>
+      </div>
     </div>
   </div>
+  <script>
+    function subNav() {
+      console.log('CLicked');
+      var dropdown = document.getElementById("sub-item");
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+
+
+    }
+
+  </script>
 </body>
 
 </html>
@@ -112,10 +137,11 @@
             <div class="status-box">
               <div class="status-content">
                 <div class="status-icon">
-                  <!-- Use appropriate classes for icon based on status -->
-                  <span class="icon up"></span> <!-- Change to 'down' for down status -->
+                  <span class="material-icons-outlined revenue-arrow-up">
+                    arrow_upward
+                  </span>
                 </div>
-                <span class="status-percentage">13%</span> <!-- Replace with dynamic value -->
+                <span class=" status-percentage">13%</span> <!-- Replace with dynamic value -->
               </div>
             </div>
             <p class="m0 pt5">last 7 days</p>
@@ -140,10 +166,40 @@
             <div class="status-box">
               <div class="status-content">
                 <div class="status-icon">
-                  <!-- Use appropriate classes for icon based on status -->
-                  <span class="icon up"></span> <!-- Change to 'down' for down status -->
+                  <span class="material-icons-outlined revenue-arrow-up">
+                    arrow_upward
+                  </span>
                 </div>
                 <span class="status-percentage">13%</span> <!-- Replace with dynamic value -->
+              </div>
+            </div>
+            <p class="m0 pt5">last 7 days</p>
+          </div>
+        </div>
+      </div>
+      <div class="revenue-card">
+        <div class="card-header">
+          <div class="align-center">
+            <span class="material-icons-outlined" style="color:gray;margin-right: 10px;">
+              dashboard
+            </span>
+            <h3 style="margin: 5px;">Total Revenue</h3>
+          </div>
+          <span class="material-icons-outlined" style="color:gray">
+            settings
+          </span>
+        </div>
+        <div class="card-header">
+          <h2>$23,456.00</h2>
+          <div class="status-container">
+            <div class="status-box" style="background-color: #FFEBEE;">
+              <div class="status-content">
+                <div class="status-icon">
+                  <span class="material-icons-outlined revenue-arrow-down">
+                    arrow_downward
+                  </span>
+                </div>
+                <span class="status-percentage" style="color:red;">13%</span> <!-- Replace with dynamic value -->
               </div>
             </div>
             <p class="m0 pt5">last 7 days</p>
@@ -168,36 +224,9 @@
             <div class="status-box">
               <div class="status-content">
                 <div class="status-icon">
-                  <!-- Use appropriate classes for icon based on status -->
-                  <span class="icon up"></span> <!-- Change to 'down' for down status -->
-                </div>
-                <span class="status-percentage">13%</span> <!-- Replace with dynamic value -->
-              </div>
-            </div>
-            <p class="m0 pt5">last 7 days</p>
-          </div>
-        </div>
-      </div>
-      <div class="revenue-card">
-        <div class="card-header">
-          <div class="align-center">
-            <span class="material-icons-outlined" style="color:gray;margin-right: 10px;">
-              dashboard
-            </span>
-            <h3 style="margin: 5px;">Total Revenue</h3>
-          </div>
-          <span class="material-icons-outlined" style="color:gray">
-            settings
-          </span>
-        </div>
-        <div class="card-header">
-          <h2>$23,456.00</h2>
-          <div class="status-container">
-            <div class="status-box">
-              <div class="status-content">
-                <div class="status-icon">
-                  <!-- Use appropriate classes for icon based on status -->
-                  <span class="icon up"></span> <!-- Change to 'down' for down status -->
+                  <span class="material-icons-outlined revenue-arrow-up">
+                    arrow_upward
+                  </span>
                 </div>
                 <span class="status-percentage">13%</span> <!-- Replace with dynamic value -->
               </div>
@@ -252,6 +281,69 @@
 </body>
 
 </html>
+    <body>
+  <div class="floating-button">
+    <button class="feedback-button" onclick="openModal()">Feedback</button>
+  </div>
+  <div class="modal hidden" id="feedback-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Feedback Title</h4>
+        <button class="modal-close-button" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-description">Please rate your experience on this page:</p>
+        <div class="rating">
+          <!-- Placeholder for rating icons -->
+          <span class="material-icons-outlined modal-radio-buttons" onclick="selectRating(this)">
+            sentiment_very_dissatisfied
+          </span>
+          <span class="material-icons-outlined modal-radio-buttons text-primary" onclick="selectRating(this)">
+            sentiment_dissatisfied
+          </span>
+          <span class="material-icons-outlined modal-radio-buttons" onclick="selectRating(this)">
+            sentiment_neutral
+          </span>
+          <span class="material-icons-outlined modal-radio-buttons" onclick="selectRating(this)">
+            sentiment_satisfied
+          </span>
+          <span class="material-icons-outlined modal-radio-buttons" onclick="selectRating(this)">
+            sentiment_very_satisfied
+          </span>
+        </div>
+        <label for=" select-job">What is the nature of your feedback?</label>
+        <select id="select-job">
+          <option value="">Select...</option>
+          <!-- Add options here -->
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="feedback-text">What would you like to share with us?</label>
+        <textarea id="feedback-text" placeholder="Placeholder" rows="3"></textarea>
+
+        <label for="email">Please leave your email if you would like to be contacted</label>
+        <input type="email" id="email" placeholder="Enter email" />
+
+        <button class="submit-button" onclick="submitFeedback()">Submit</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function closeModal() {
+      const element = document.getElementById('feedback-modal');
+      element.classList.remove("visible");
+      element.classList.add("hidden");
+    }
+    function openModal() {
+      const element = document.getElementById('feedback-modal');
+      element.classList.remove("hidden");
+      element.classList.add("visible");
+
+    }
+  </script>
+</body>
   </div>
   <script src="/js/home.js"></script>
 </body>

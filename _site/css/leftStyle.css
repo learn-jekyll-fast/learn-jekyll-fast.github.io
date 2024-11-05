@@ -38,6 +38,14 @@
   align-items: center;
   flex-wrap: nowrap;
   text-align: left;
+  border: none;
+}
+
+
+.dropdown-container {
+  display: block;
+  background-color: #ffffff;
+  padding-left: 8px;
 }
 
 /* When you mouse over the navigation links, change their color */
