@@ -1,0 +1,20 @@
+  - title: Total Revenue
+    value: $23,456.00
+    trend: upward
+    by: 13%
+    last-update: 7 days
+  - title: Total Customers
+    value: 567
+    trend: downward
+    by: 0.5%
+    last-update: 7 days
+  - title: Total Automations
+    value: 470000
+    trend: upward
+    by: 20%
+    last-update: 7 days
+  - title: Retention Rate
+    value: 85%
+    trend: upward
+    by: 5%
+    last-update: 7 days
