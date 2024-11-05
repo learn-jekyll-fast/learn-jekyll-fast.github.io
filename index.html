@@ -11,20 +11,20 @@ price-level-3: Platinum Level
 price-level-4: Diamond Level
 ---
 
-<script src="https://js.stripe.com/v3/"></script>
+<!-- <script src="https://js.stripe.com/v3/"></script> -->
 
 <script>
-  var userDataa;
-  var stripe = Stripe('pk_test_51Q83t4E1kHJTQOxYgrnPbqIfdrciqFTrb8mfYG0kTBN2UfjqdcoT4VXmooQLzgWIJMvVYlBWu3d34UeK5dc5AdhJ001IdUfhbx');
-  stripe.products.list().then(function (response) {
-    userDataa = response.data;
-    console.log('DATA:   ' + JSON.stringify(userDataa));
-    var table = document.createElement('p');
-    table = userDataa;
-    document.body.appendChild(table);
-  }).catch(function (error) {
-    console.error("Error fetching products:", error);
-  });
+  // var userDataa;
+  // var stripe = Stripe('pk_test_51Q83t4E1kHJTQOxYgrnPbqIfdrciqFTrb8mfYG0kTBN2UfjqdcoT4VXmooQLzgWIJMvVYlBWu3d34UeK5dc5AdhJ001IdUfhbx');
+  // stripe.products().then(function (response) {
+  //   userDataa = response.data;
+  //   console.log('DATA:   ' + JSON.stringify(userDataa));
+  //   var table = document.createElement('p');
+  //   table = userDataa;
+  //   document.body.appendChild(table);
+  // }).catch(function (error) {
+  //   console.error("Error fetching products:", error);
+  // });
 
   // Find the Silver Level product
   // var silverLevelProduct = userData.allproducts.data.find(function (product) {

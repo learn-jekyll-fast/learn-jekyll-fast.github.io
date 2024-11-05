@@ -4,3 +4,20 @@ title: "Sales Portal"
 blurb: "Here are all of our tasty blog posts."
 tab: dashboard
 ---
+
+<script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
+<script>
+  // Wrap the initialization and login in an async function
+  (async function () {
+    // Create an instance of Auth0
+    const auth0 = await createAuth0Client({
+      domain: 'dev-qirtwh6cktfuc8ap.us.auth0.com', // Your Auth0 domain
+      client_id: 'CmiF5zKFREhl7eEmcL8p2z5vkU8Fbzk5', // Your Auth0 client ID
+      redirect_uri: window.location.origin + '/callback' // Adjust the redirect URI as needed
+    });
+
+    document.getElementById('login-btn').addEventListener('click', async () => {
+      await auth0.loginWithRedirect();
+    });
+  })();
+</script>
