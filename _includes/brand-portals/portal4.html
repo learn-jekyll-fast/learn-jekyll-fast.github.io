@@ -1,0 +1,65 @@
+<div class="column-center" style=" width: 50vw;">
+  <div>
+    <h4>Review your Branding</h4>
+    <p style="margin-top: 16px;">We have prefilled your branding attributes. Make changes if needed, or hit next to move
+      on!</p>
+
+    <label class="company-name-label">
+      Primary Color
+    </label>
+    <div class="row  row-center">
+      <input style="margin-right: -52px; z-index: 1; border: none;" type="color" id="favcolor" value="#ff0000">
+      <input type="text" class="company-name-input" style="padding-left: 55px;" required placeholder="" />
+    </div>
+
+    <label class="company-name-label">
+      Secondary Color
+    </label>
+    <div class="row  row-center">
+      <input style="margin-right: -52px; z-index: 1;border: none;" type="color" id="favcolor" value="#ff0000">
+      <input type="text" class="company-name-input" style="padding-left: 55px;" required placeholder="" />
+    </div>
+    <label class="company-name-label">
+      Accent Color
+    </label>
+    <div class="row  row-center">
+      <input style="margin-right: -52px; z-index: 1;border: none;" type="color" id="favcolor" value="#ff0000">
+      <input type="text" class="company-name-input" style="padding-left: 55px;" required placeholder="" />
+    </div>
+    <label class="company-name-label">
+      Header Font
+    </label>
+    <input type="text" class="company-name-input" placeholder="Enter your header font" />
+    <label class="company-name-label">
+      Paragraph Font
+    </label>
+    <input type="text" class="company-name-input" placeholder="Enter your paragraph font" />
+  </div>
+  <div class="portal-footer" style="margin-top: 20px;">
+    <div class="back-button" onclick="handlePortalBack4()">
+      <span class="material-icons-outlined ">
+        arrow_back
+      </span>
+    </div>
+    <button class="portal-submit-button" onclick="window.location.href='/dashboard.html';">
+      Publish
+    </button>
+  </div>
+</div>
+<script>
+  function handlePortalBack4() {
+    document.getElementById('currentStep').innerText = 3;
+    document.getElementById('progress').style.width = "75%";
+    document.getElementById('portal3').classList.replace('hidden', 'visible')
+    document.getElementById('portal4').classList.replace('visible', 'hidden')
+  }
+  function handlePortal4() {
+    document.getElementById('currentStep').innerText = 4;
+    document.getElementById('progress').style.width = "75%";
+    document.getElementById('portal4').classList.replace('hidden', 'visible')
+    document.getElementById('portal3').classList.replace('visible', 'hidden')
+
+    console.log('Portal 3');
+  }
+
+</script>
