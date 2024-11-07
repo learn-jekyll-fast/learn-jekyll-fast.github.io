@@ -606,7 +606,7 @@
       const redirectResult = await auth0.handleRedirectCallback();
       //logged in. you can get the user profile like this:
       const user = await auth0.getUser();
-      console.log('LOAD:  ' + user);
+      console.log('LOAD:  ' + JSON.stringify(user));
     });
   })();
 
