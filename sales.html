@@ -16,7 +16,7 @@ tab: dashboard
       redirect_uri: 'https://learn-jekyll-fast.github.io' // Adjust the redirect URI as needed
     });
 
-    document.getElementById('login-bt').addEventListener('click', async () => {
+    document.getElementById('login-btn').addEventListener('click', async () => {
       await auth0.loginWithRedirect();
       const user = await auth0.getUser();
 
