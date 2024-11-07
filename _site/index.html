@@ -604,9 +604,15 @@
     });
     window.addEventListener('load', async () => {
       const redirectResult = await auth0.handleRedirectCallback();
+      console.log('LOADING USER  ');
       //logged in. you can get the user profile like this:
-      const user = await auth0.getUser();
-      console.log('LOAD:  ' + JSON.stringify(user));
+      try {
+        const user = await auth0.getUser();
+        console.log('LOAD:  ' + JSON.stringify(user));
+      } catch (error) {
+        console.log('ERROR USER  ' + error);
+      }
+
     });
   })();
 
