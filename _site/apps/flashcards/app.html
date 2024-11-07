@@ -48,12 +48,13 @@
     </div>
   </header>
   <script>
-    function getData() {
-      console.log('LOADING DATA');
-      const storedUser = JSON.parse(sessionStorage.getItem('user'));
-      console.log('LOADING DATA now:  ' + storedUser);
-      document.getElementById('name').innerText = `${storedUser.name}`;
-      document.getElementById('email').innerText = `${storedUser.email}`;
+    async function getData() {
+      const user = await retreiveData();
+      console.log('LOADING DATA :   ' + JSON.stringify(user));
+      // const storedUser = JSON.parse(sessionStorage.getItem('user'));
+      // console.log('LOADING DATA now:  ' + storedUser);
+      // document.getElementById('name').innerText = `${storedUser.name}`;
+      // document.getElementById('email').innerText = `${storedUser.email}`;
 
     }
 

@@ -1,7 +1,10 @@
+let auth0;
+
 function init() {
   navListClick(0);
 }
 window.onload = init;
+
 
 
 function navListClick(index) {
@@ -83,12 +86,12 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-  function selectRating(selected) {
-    // Remove 'text-primary' class from all spans
-    const spans = document.querySelectorAll('.modal-radio-buttons');
-    spans.forEach(span => {
-      span.classList.remove('text-primary');
-    });
-    // Add 'text-primary' class to the selected span
-    selected.classList.add('text-primary');
-  }
+function selectRating(selected) {
+  // Remove 'text-primary' class from all spans
+  const spans = document.querySelectorAll('.modal-radio-buttons');
+  spans.forEach(span => {
+    span.classList.remove('text-primary');
+  });
+  // Add 'text-primary' class to the selected span
+  selected.classList.add('text-primary');
+}
