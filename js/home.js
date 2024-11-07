@@ -8,9 +8,12 @@ window.onload = init
 function updateDashboard() {
   console.log('Retriving Data');
   const storedUser = JSON.parse(sessionStorage.getItem('user'));
-  console.log('Calling Data ' + storedUser);
+
   document.getElementById('name').innerText = `${storedUser.name}`;
   document.getElementById('email').innerText = `${storedUser.email}`;
+  document.getElementById('profile-pic').src = `${storedUser.picture}`;
+  console.log('Calling Data ' + JSON.stringify(storedUser));
+
 }
 
 

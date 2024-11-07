@@ -16,17 +16,24 @@
           <span class="account-icon">👤</span>
           <span class="badge">3</span>
         </a>
-        <button class="icon-button" aria-label="account of current user">
-          <span class="account-icon">👤</span>
-        </button>
-        <div class="user-info">
-          <span id="name" class="user-name">N.P</span>
-          <span id="email" class="user-role">Manager</span>
+        <div class="row">
+          <button class="icon-button" aria-label="account of current user">
+            <img id="profile-pic" src="avatar.png" alt="Avatar" class="avatar">
+          </button>
+          <div class="user-info">
+            <span id="name" class="user-name">N.P</span>
+            <span id="email" class="user-role">Manager</span>
+          </div>
         </div>
+
       </div>
     </div>
   </header>
-
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
 </body>
 
 </html>
