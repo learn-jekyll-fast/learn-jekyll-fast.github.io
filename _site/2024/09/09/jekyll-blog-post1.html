@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
-<body>
+<body >
   <div id="home" class="full-height">
     <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +45,7 @@
   </header>
   <script>
     async function getData() {
+      console.log('Calling Data');
       const user = await retreiveData();
       console.log('LOADING DATA :   ' + JSON.stringify(user));
       // const storedUser = JSON.parse(sessionStorage.getItem('user'));
@@ -212,7 +213,10 @@
   </script>
 </body>
   </div>
+  <script src="/js/okta.js"></script>
+
   <script src="/js/home.js"></script>
+
 </body>
 
 </html>
