@@ -1,10 +1,20 @@
 
 function init() {
   navListClick(0);
+  
 }
 window.onload = init;
 
+async function getData() {
+  console.log('Calling Data');
+  const user = await retreiveData();
+  console.log('LOADING DATA :   ' + JSON.stringify(user));
+  // const storedUser = JSON.parse(sessionStorage.getItem('user'));
+  // console.log('LOADING DATA now:  ' + storedUser);
+  // document.getElementById('name').innerText = `${storedUser.name}`;
+  // document.getElementById('email').innerText = `${storedUser.email}`;
 
+}
 
 function navListClick(index) {
   let element;

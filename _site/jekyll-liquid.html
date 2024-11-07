@@ -22,7 +22,7 @@
 <body><!DOCTYPE html>
 <html lang="en">
 
-<body onload="getData()">
+<body>
   <header id="header" class="app-bar">
     <div class="toolbar">
       <img id="logo" src="/assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
@@ -47,19 +47,7 @@
       </div>
     </div>
   </header>
-  <script>
-    async function getData() {
-      console.log('Calling Data');
-      const user = await retreiveData();
-      console.log('LOADING DATA :   ' + JSON.stringify(user));
-      // const storedUser = JSON.parse(sessionStorage.getItem('user'));
-      // console.log('LOADING DATA now:  ' + storedUser);
-      // document.getElementById('name').innerText = `${storedUser.name}`;
-      // document.getElementById('email').innerText = `${storedUser.email}`;
 
-    }
-
-  </script>
 </body>
 
 </html><main class="page-content" aria-label="Content">
