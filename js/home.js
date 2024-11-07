@@ -1,7 +1,16 @@
 
 function init() {
   navListClick(0);
-  
+  updateDashboard();
+}
+window.onload = init
+
+function updateDashboard() {
+  console.log('Retriving Data');
+  const storedUser = JSON.parse(sessionStorage.getItem('user'));
+  console.log('Calling Data ' + storedUser);
+  document.getElementById('name').innerText = `${storedUser.name}`;
+  document.getElementById('email').innerText = `${storedUser.email}`;
 }
 
 
