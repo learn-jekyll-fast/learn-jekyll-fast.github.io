@@ -606,18 +606,6 @@
     window.addEventListener('load', async () => {
 
       console.log('LOADING USER  ');
-      const user1 = {
-        "given_name": "Amanpreet",
-        "family_name": "Singh",
-        "nickname": "aman.xennial",
-        "name": "Amanpreet Singh",
-        "picture": "https://lh3.googleusercontent.com/a/ACg8ocK_0EZHUpsmfTXgAlHX9SnWnar41hpOvL5sYp08IONcFGzhFA=s96-c",
-        "updated_at": "2024-11-07T15:35:44.987Z",
-        "email": "aman.xennial@gmail.com",
-        "email_verified": true,
-        "sub": "google-oauth2|101580982571537258586"
-      }
-      sessionStorage.setItem('user', JSON.stringify(user1));
       //logged in. you can get the user profile like this:
       try {
         const redirectResult = await auth0.handleRedirectCallback();
