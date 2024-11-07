@@ -28,7 +28,7 @@ const login = async (targetUrl) => {
 
     const options = {
       authorizationParams: {
-        redirect_uri: 'https://staging.milesahead.today'
+        redirect_uri: 'https://learn-jekyll-fast.github.io/dashboard-cm.html'
       }
     };
 
