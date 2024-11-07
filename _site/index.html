@@ -604,9 +604,12 @@
     document.getElementById('login-btn').addEventListener('click', async () => {
       await auth0.loginWithRedirect();
       console.log('LOGGING IN   ');
-      const user = await auth0.getUser();
+      setTimeout(async () => {
+        const user = await auth0.getUser();
+        console.log('LOAD LOGG:  ' + JSON.stringify(user));
 
-      console.log('LOAD LOGG:  ' + JSON.stringify(user));
+      }, 5000);
+
     });
 
   })();
