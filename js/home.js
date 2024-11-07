@@ -1,4 +1,3 @@
-let auth0;
 
 function init() {
   navListClick(0);
