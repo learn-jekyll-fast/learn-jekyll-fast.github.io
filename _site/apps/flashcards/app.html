@@ -22,7 +22,7 @@
 <body><!DOCTYPE html>
 <html lang="en">
 
-<body>
+<body onload="getData()">
   <header id="header" class="app-bar">
     <div class="toolbar">
       <img id="logo" src="/assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
@@ -41,12 +41,23 @@
           <span class="account-icon">👤</span>
         </button>
         <div class="user-info">
-          <span class="user-name">N.P</span>
-          <span class="user-role">Manager</span>
+          <span id="name" class="user-name">N.P</span>
+          <span id="email" class="user-role">Manager</span>
         </div>
       </div>
     </div>
   </header>
+  <script>
+    function getData() {
+      console.log('LOADING DATA');
+      const storedUser = JSON.parse(sessionStorage.getItem('user'));
+      console.log('LOADING DATA now:  ' + storedUser);
+      document.getElementById('name').innerText = `${storedUser.name}`;
+      document.getElementById('email').innerText = `${storedUser.email}`;
+
+    }
+
+  </script>
 </body>
 
 </html><main class="page-content" aria-label="Content">
