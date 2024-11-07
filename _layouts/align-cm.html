@@ -41,18 +41,20 @@
   <body class="h-100">
     <div id="app" class="h-100 d-flex flex-column">
       <div class="nav-container">
-     
+     {% include header.html %}
       </div>
 
-      <div id="main-content" class="container mt-5 flex-grow-1">
+    <div id="main-content" class="container mt-5 flex-grow-1">
         <div id="content-home" class="page">
-    {% include header.html %}
+        </div>
+    </div>   
+      
+    
     {% include side-drawer.html %}
     {% include homepage.html %}
     {% include footer.html %}
     {% include feedback.html %}
-      </div>
-    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
