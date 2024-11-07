@@ -12,11 +12,19 @@ async function login() {
 
 async function retreiveData() {
 
-  const redirectResult = await auth0.handleRedirectCallback();
-  console.log('redirectResult:  ' + JSON.stringify(redirectResult));
-  //logged in. you can get the user profile like this:
-  const user = await auth0.getUser();
-  console.log('USER:  ' + JSON.stringify(user));
+  try {
 
-  return user;
+
+    const redirectResult = await auth0.handleRedirectCallback();
+    console.log('redirectResult:  ' + JSON.stringify(redirectResult));
+    //logged in. you can get the user profile like this:
+    const user = await auth0.getUser();
+    console.log('USER:  ' + JSON.stringify(user));
+
+    return user;
+  } catch (error) {
+    console.log(error);
+  }
+
+  return {};
 }
