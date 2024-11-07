@@ -3,3 +3,21 @@ layout: align
 title: "Dashboard"
 tab: "dashboard"
 ---
+
+<script>
+  window.addEventListener('load', async () => {
+
+    console.log('LOADING USER  ');
+    //logged in. you can get the user profile like this:
+    try {
+      const redirectResult = await window.auth0.handleRedirectCallback();
+      const user = await window.auth0.getUser();
+
+      sessionStorage.setItem('user', JSON.stringify(user));
+      console.log('LOAD:  ' + JSON.stringify(user));
+    } catch (error) {
+      console.log('ERROR USER  ' + error);
+    }
+
+  });
+</script>

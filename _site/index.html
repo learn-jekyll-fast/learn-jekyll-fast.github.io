@@ -599,25 +599,13 @@
       redirect_uri: 'https://learn-jekyll-fast.github.io/dashboard.html' // Adjust the redirect URI as needed
     });
 
+    window.autho = auth0;
+
     document.getElementById('login-btn').addEventListener('click', async () => {
       await auth0.loginWithRedirect();
       console.log('LOGGING IN   ');
     });
-    window.addEventListener('load', async () => {
-
-      console.log('LOADING USER  ');
-      //logged in. you can get the user profile like this:
-      try {
-        const redirectResult = await auth0.handleRedirectCallback();
-        const user = await auth0.getUser();
-
-        sessionStorage.setItem('user', JSON.stringify(user));
-        console.log('LOAD:  ' + JSON.stringify(user));
-      } catch (error) {
-        console.log('ERROR USER  ' + error);
-      }
-
-    });
+   
   })();
 
 
