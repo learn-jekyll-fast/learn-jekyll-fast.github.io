@@ -20,9 +20,8 @@ function deleteCookie(name) {
 
 const configureClient = async () => {
   auth0Client = await createAuth0Client({
-    domain: 'dev-fzaxiig2nqftlaxz.us.auth0.com', // Your Auth0 domain
-    client_id: '25XWQm2rT7G0jxoUblSo4Ec3yZCEd8wG', // Your Auth0 client ID
-    redirect_uri: window.location.origin
+    domain: 'dev-qirtwh6cktfuc8ap.us.auth0.com', // Your Auth0 domain
+    client_id: 'if0RVNLLCc8jKwyxxaFXEL3vqDC9Svim', // Your Auth0 client I
   });
 };
 
@@ -52,7 +51,7 @@ async function login() {
 }
 
 async function logout() {
-  console.log('Logout');
+  console.log('Logout  ' + window.location.origin);
   await configureClient();
   await auth0Client.logout({
     logoutParams: {
@@ -62,9 +61,5 @@ async function logout() {
   deleteCookie('name')
 }
 
-// Will run when page finishes loading
-window.onload = async () => {
-  console.log('onLoad');
 
-};
 

@@ -14,11 +14,16 @@
       Create, Test and Publish
     </p>
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'dev')">In Development</button>
-      <button class="tablinks" onclick="openCity(event, 'test')">Ready for testing</button>
-      <button class="tablinks" onclick="openCity(event, 'prod')">Deployed</button>
+      <button id="all-tab" class="tablinks" onclick="selectedTab( 'all')">All Apps</button>
+      <button id="dev-tab" class="tablinks" onclick="selectedTab( 'dev')">In Development</button>
+      <button id="test-tab" class="tablinks" onclick="selectedTab( 'test')">Ready for testing</button>
+      <button id="prod-tab" class="tablinks" onclick="selectedTab( 'prod')">Deployed</button>
     </div>
+
     <!-- Tab content -->
+    <div id="all" class="tabcontent">
+
+    </div>
     <div id="dev" class="tabcontent">
 
     </div>

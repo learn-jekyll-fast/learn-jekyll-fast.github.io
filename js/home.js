@@ -1,6 +1,11 @@
 
 function init() {
-  navListClick(0);
+  if (window.location.href.match('dashboard.html')) {
+    navListClick(0);
+  }
+  if (window.location.href.match('applications.html')) {
+    selectedTab('all')
+  }
   updateDashboard();
   truncateName();
 }
@@ -83,7 +88,7 @@ function closeNav() {
   document.getElementById("logo").style.display = "block";
 }
 
-function openCity(evt, cityName) {
+function selectedTab(tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -100,8 +105,8 @@ function openCity(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById('test').style.display = "block";
-  evt.currentTarget.className += " active";
+  document.getElementById(tabName).style.display = "block";
+  document.getElementById(`${tabName}-tab`).className += " active";
 }
 
 function selectRating(selected) {
