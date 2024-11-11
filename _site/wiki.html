@@ -19,7 +19,7 @@
 <html lang="en">
 
 <body>
-  <header id="header" class="app-bar">
+  <nav id="header" class="app-bar">
     <div class="toolbar">
       <img id="logo" src="/assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
       <button id="menu-icon" class="icon-button" aria-label="open drawer">
@@ -33,27 +33,41 @@
           <span class="account-icon">👤</span>
           <span class="badge">3</span>
         </a>
-        <div class="row" onclick="myFunction()">
-          <button class="icon-button" aria-label="account of current user">
-            <img id="profile-pic" src="avatar.png" alt="Avatar" class="avatar">
+        <div class="row dropbtn" onclick="toggleMenu()">
+          <button class="icon-button " aria-label="account of current user">
+            <img id="profile-pic" alt="Avatar" class="avatar">
           </button>
           <div class="user-info">
-            <span id="name" class="user-name">N.P</span>
-            <span id="email" class="user-role">Manager</span>
+            <span id="name" class="user-name">Amanpreet Singh</span>
+
           </div>
         </div>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+
       </div>
+
     </div>
-  </header>
+  </nav>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
   <script>
-    function myFunction() {
+
+    function toggleMenu() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
+    // // Close the dropdown menu if the user clicks outside of it
+    // window.onclick = function (event) {
+    //   if (!event.target.matches('.dropbtn')) {
+    //     var dropdowns = document.getElementsByClassName("dropdown-content");
+    //     var i;
+    //     for (i = 0; i < dropdowns.length; i++) {
+    //       var openDropdown = dropdowns[i];
+    //       if (openDropdown.classList.contains('show')) {
+    //         openDropdown.classList.remove('show');
+    //       }
+    //     }
+    //   }
+    // }
   </script>
 </body>
 
@@ -216,6 +230,7 @@
   </script>
 </body>
   </div>
+
   <script src="/js/home.js"></script>
 
 </body>

@@ -1,13 +1,29 @@
 let auth0Client;
 
+function setCookie(name, value, days) {
+  console.log("Setting the cookie...");
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  // Secure flag is necessary when running on HTTPS (like GitHub Pages)
+  document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax; Secure";
+}
+
+function deleteCookie(name) {
+  // Set the cookie with the same name, path, and secure flag, but with an expired date
+  console.log("Deleting the cookie...");
+  document.cookie = name + "=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; SameSite=Lax; Secure";
+}
+
 const configureClient = async () => {
   auth0Client = await createAuth0Client({
     domain: 'dev-fzaxiig2nqftlaxz.us.auth0.com', // Your Auth0 domain
     client_id: '25XWQm2rT7G0jxoUblSo4Ec3yZCEd8wG', // Your Auth0 client ID
     redirect_uri: window.location.origin
   });
-
-
 };
 
 async function login() {
@@ -22,20 +38,28 @@ async function login() {
 
   const isAuthenticated = await auth0Client.isAuthenticated();
 
-  //logged in. you can get the user profile like this:
-
-
-
   if (isAuthenticated) {
-    console.log("> User is authenticated");
-
     const user = await auth0Client.getUser();
+    setCookie("name", user.email, 7)
+    setCookie("user", JSON.stringify(user), 7)
     sessionStorage.setItem('user', JSON.stringify(user))
     console.log('USER:  ' + JSON.stringify(user));
-    window.location.href = '/dashboard.html';
+    window.location.replace('/dashboard.html')
+    // window.location.href = '/dashboard.html';
 
     return;
   }
+}
+
+async function logout() {
+  console.log('Logout');
+  await configureClient();
+  await auth0Client.logout({
+    logoutParams: {
+      returnTo: window.location.origin
+    }
+  });
+  deleteCookie('name')
 }
 
 // Will run when page finishes loading

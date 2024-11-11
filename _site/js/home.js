@@ -2,8 +2,16 @@
 function init() {
   navListClick(0);
   updateDashboard();
+  truncateName();
 }
 window.onload = init
+
+function truncateName() {
+  const nameElement = document.getElementById("name");
+  const fullName = nameElement.textContent;
+  const nameParts = fullName.split(" ");
+  nameElement.textContent = `${nameParts[0]} ${nameParts[1].charAt(0)}.`;
+}
 
 function updateDashboard() {
   console.log('Retriving Data');
