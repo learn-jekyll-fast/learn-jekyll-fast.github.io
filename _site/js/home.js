@@ -27,6 +27,26 @@ function updateDashboard() {
   document.getElementById('profile-pic').src = `${storedUser.picture}`;
   console.log('Calling Data ' + JSON.stringify(storedUser));
 
+  const isAdmin = storedUser.role === 'admin' ? true : false;
+
+  if (isAdmin) {
+    console.log('IS ADMIN');
+    document.getElementById("nav-list").classList.add('hidden');
+    document.getElementById("nav-list-admin").classList.add('visible');
+
+  } else {
+    document.getElementById("nav-list").classList.add('visible');
+    document.getElementById("nav-list-admin").classList.add('hidden');
+    document.getElementById("app-tabs").classList.add('hidden');
+  }
+
+
+}
+
+function adminView() {
+  const storedUser = JSON.parse(sessionStorage.getItem('user'));
+  const isAdmin = storedUser.role === 'Admin' ? true : false;
+
 }
 
 
@@ -60,7 +80,7 @@ function navListClick(index) {
     default:
       break;
   }
-  var navList = document.getElementById("nav-list").children;
+  var navList = document.getElementById("nav-list-admin").children;
   for (var i = 0; i < navList.length; i++) {
     navList[i].addEventListener("click", function () {
       var current = document.getElementsByClassName("active");

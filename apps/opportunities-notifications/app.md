@@ -1,8 +1,9 @@
 ---
 layout: align
-title: "Opportunities Builder"
+title: "Opportunities Notifications"
 tab: app
-blurb: "We'll quickly build out opportunities for you."
+access: admin
+blurb: "Set your preference and receive email notifications based on your choice. "
 ---
 
 <link rel="manifest" href="manifest.json"/>

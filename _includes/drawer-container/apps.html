@@ -13,7 +13,7 @@
     <p class="description">
       Create, Test and Publish
     </p>
-    <div class="tab">
+    <div id="app-tabs" class="tab">
       <button id="all-tab" class="tablinks" onclick="selectedTab( 'all')">All Apps</button>
       <button id="dev-tab" class="tablinks" onclick="selectedTab( 'dev')">In Development</button>
       <button id="test-tab" class="tablinks" onclick="selectedTab( 'test')">Ready for testing</button>
@@ -22,7 +22,31 @@
 
     <!-- Tab content -->
     <div id="all" class="tabcontent">
-
+      <div style="display: flex; flex-wrap: wrap; padding-bottom: 60px; ">
+        {% for page in site.pages %}
+        {% if page.path contains 'apps/' %}
+        {% if page.access == "admin" %}
+        <div class="card">
+          <div class="card-header">
+            <div class="align-center">
+              <span class="material-icons-outlined" style="margin-right: 10px;">
+                dashboard
+              </span>
+              <h4 style="margin: 5px;">{{ page.title }}</h4>
+            </div>
+            <span class="material-icons-outlined">
+              settings
+            </span>
+          </div>
+          <p class="description"> {{ page.blurb }}</p>
+          <div class="test-app-button">
+            <a href={{page.url}}>Test App</a>
+          </div>
+        </div>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+      </div>
     </div>
     <div id="dev" class="tabcontent">
 

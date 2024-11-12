@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Opportunities Builder</title>
+  <title>Opportunities Notifications</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/css/leftStyle.css">
@@ -38,8 +38,7 @@
             <img id="profile-pic" alt="Avatar" class="avatar">
           </button>
           <div class="user-info">
-            <span id="name" class="user-name">Amanpreet Singh</span>
-
+            <span id="name" class="user-name">Username</span>
           </div>
         </div>
 
@@ -80,7 +79,7 @@
   <div id="mySidenav" class="sidenav">
     <img id="logo" src="/assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div id="nav-list">
+    <div id="nav-list-admin" class="hidden">
       <a id="dashboard" href="/dashboard.html" class=""><span
           class="material-icons-outlined text-primary" style="margin-right: 20px;">
           dashboard
@@ -104,6 +103,12 @@
             dashboard
           </span>Sales Page</a>
       </div>
+    </div>
+    <div id="nav-list">
+      <a id="apps" href="/applications.html" class=""><span
+          class="material-icons-outlined text-primary" style="margin-right: 20px;">
+          dashboard
+        </span>Apps</a>
     </div>
   </div>
   <script>
@@ -200,7 +205,7 @@
             sentiment_very_satisfied
           </span>
         </div>
-        <label for=" select-job">What is the nature of your feedback?</label>
+        <label for="select-job">What is the nature of your feedback?</label>
         <select id="select-job">
           <option value="">Select...</option>
           <!-- Add options here -->
@@ -234,7 +239,9 @@
   </script>
 </body>
   </div>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
 
+  <script src="/js/okta.js"></script>
   <script src="/js/home.js"></script>
 
 </body>

@@ -43,7 +43,12 @@ async function login() {
     setCookie("user", JSON.stringify(user), 7)
     sessionStorage.setItem('user', JSON.stringify(user))
     console.log('USER:  ' + JSON.stringify(user));
-    window.location.replace('/dashboard.html')
+    if (user.role === 'admin') {
+      window.location.replace('/dashboard.html')
+
+    } else {
+      window.location.replace('/applications.html')
+    }
     // window.location.href = '/dashboard.html';
 
     return;
