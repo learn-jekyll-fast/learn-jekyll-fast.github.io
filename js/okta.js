@@ -19,9 +19,15 @@ function deleteCookie(name) {
 }
 
 const configureClient = async () => {
+  //Local
+  // auth0Client = await createAuth0Client({
+  //   domain: 'dev-qirtwh6cktfuc8ap.us.auth0.com', // Your Auth0 domain
+  //   client_id: 'if0RVNLLCc8jKwyxxaFXEL3vqDC9Svim', // Your Auth0 client I
+  // });
+  // GIHUB.IO
   auth0Client = await createAuth0Client({
     domain: 'dev-qirtwh6cktfuc8ap.us.auth0.com', // Your Auth0 domain
-    client_id: 'if0RVNLLCc8jKwyxxaFXEL3vqDC9Svim', // Your Auth0 client I
+    client_id: 'xVKr3qH9PKG84cZVAK0OS9QcDkb10ver', // Your Auth0 client I
   });
 };
 
