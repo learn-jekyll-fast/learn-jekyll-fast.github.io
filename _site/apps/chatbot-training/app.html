@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>ChatBot Training</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/css/leftStyle.css">
   <link rel="stylesheet" href="/css/topStyle.css">
@@ -31,7 +32,7 @@
       <div class="notification-area">
         <a href="#" class="notification">
           <span class="account-icon">👤</span>
-          <span class="badge">3</span>
+          <span class="badge">1</span>
         </a>
         <div class="row dropbtn" onclick="toggleMenu()">
           <button class="icon-button " aria-label="account of current user">
@@ -187,7 +188,7 @@
       </div>
       <div class="modal-body">
         <p class="modal-description">Please rate your experience on this page:</p>
-        <div class="rating">
+        <div id="rating" class="rating">
           <!-- Placeholder for rating icons -->
           <span class="material-icons-outlined modal-radio-buttons" onclick="selectRating(this)">
             sentiment_very_dissatisfied
@@ -205,22 +206,30 @@
             sentiment_very_satisfied
           </span>
         </div>
-        <label for="select-job">What is the nature of your feedback?</label>
-        <select id="select-job">
-          <option value="">Select...</option>
-          <!-- Add options here -->
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
+        <form class="column">
 
-        <label for="feedback-text">What would you like to share with us?</label>
-        <textarea id="feedback-text" placeholder="Placeholder" rows="3"></textarea>
+          <label for="subject">Subject</label>
+          <input type=text id="subject" placeholder="Enter subject" />
 
-        <label for="email">Please leave your email if you would like to be contacted</label>
-        <input type="email" id="email" placeholder="Enter email" />
+          <label for="select-job">What is the nature of your feedback?</label>
+          <select id="select-job">
+            <option value="">Choose a subject</option>
+            <!-- Add options here -->
+            <option value="general">General Feedback</option>
+            <option value="opportunity-creator">Opportunity Creator</option>
+            <option value="opportunity-notifications">Opportunity Notifications</option>
+          </select>
 
-        <button class="submit-button" onclick="submitFeedback()">Submit</button>
+          <label for="feedback-text">What would you like to share with us?</label>
+          <textarea id="feedback-text" placeholder="Placeholder" rows="3"></textarea>
+
+          <label for="email">Please leave your email if you would like to be contacted</label>
+          <input type="email" id="email" placeholder="Enter email" />
+
+          <button id="submit" type="submit" class="submit-button center"><i id="feedback-loading"
+              class="fa fa-spinner fa-spin mv5 hidden"></i>
+            Submit</button>
+        </form>
       </div>
     </div>
   </div>
@@ -229,21 +238,66 @@
       const element = document.getElementById('feedback-modal');
       element.classList.remove("visible");
       element.classList.add("hidden");
+      hideFeedbackLoading();
     }
     function openModal() {
       const element = document.getElementById('feedback-modal');
       element.classList.remove("hidden");
       element.classList.add("visible");
-
     }
+    function showFeedbackLoading() {
+      const element = document.getElementById('feedback-loading');
+      element.classList.remove("hidden");
+      element.classList.add("visible");
+    }
+    function hideFeedbackLoading() {
+      const element = document.getElementById('feedback-loading');
+      element.classList.remove("visible");
+      element.classList.add("hidden");
+    }
+
+    async function submit() {
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', async event => {
+        event.preventDefault();
+        let stars = document.getElementsByClassName("modal-radio-buttons");
+        let i = 0;
+        var rating = 0;
+        while (i < stars.length) {
+          if (stars[i].classList.contains('text-primary')) {
+            rating = i + 1;
+            break;
+          }
+          i++;
+        }
+        const summary = document.querySelector('#subject').value;
+        const serviceName = document.querySelector('#select-job').value;
+        const issueDescription = document.querySelector('#feedback-text').value;
+
+        const data = {
+          summary: summary,
+          serviceName: serviceName,
+          issueDescription: issueDescription,
+          rating: rating
+        };
+        showFeedbackLoading();
+        const response = await submitFeedback(data);
+        closeModal();
+        console.log('RESPONSE:  ' + JSON.stringify(response));
+        // updateTodoList(submitTodoItem);
+      });
+    }
+
+    submit();
   </script>
 </body>
   </div>
   <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
-
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/js/okta.js"></script>
   <script src="/js/home.js"></script>
-
+  <script src="/js/apis.js"></script>
 </body>
 
 </html>

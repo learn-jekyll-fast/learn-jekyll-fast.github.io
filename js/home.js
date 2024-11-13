@@ -25,7 +25,7 @@ function updateDashboard() {
   document.getElementById('name').innerText = `${storedUser.name}`;
   document.getElementById('email').innerText = `${storedUser.email}`;
   document.getElementById('profile-pic').src = `${storedUser.picture}`;
-  console.log('Calling Data ' + JSON.stringify(storedUser));
+  console.log('Calling Data ' + JSON.stringify(storedUser.name));
 
   const isAdmin = storedUser.role === 'admin' ? true : false;
 

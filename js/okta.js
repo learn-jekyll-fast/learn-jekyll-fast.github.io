@@ -48,7 +48,7 @@ async function login() {
     setCookie("name", user.email, 7)
     setCookie("user", JSON.stringify(user), 7)
     sessionStorage.setItem('user', JSON.stringify(user))
-    console.log('USER:  ' + JSON.stringify(user));
+    console.log('USER:  ' + JSON.stringify(user.name));
     if (user.role === 'admin') {
       window.location.replace('/dashboard.html')
 
