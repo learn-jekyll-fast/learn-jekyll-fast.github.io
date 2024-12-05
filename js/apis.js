@@ -14,6 +14,7 @@ const submitFeedback = async formData => {
       userName: currentUser.name,
       userEmail: currentUser.email,
       issueType: 'Feedback',
+      priority: 'Medium',
       ...formData
     };
 

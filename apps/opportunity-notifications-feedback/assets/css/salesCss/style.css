@@ -1,0 +1,1494 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Appro - App landing Page html5 template 
+    Description: This is App landing Page html5 template 
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------
+	1.  Theme default CSS
+	2.  MENU DESIGN DESIGN
+	3.  SLIDER DESIGN
+	4.  SECTION HEADING
+	5.  ABOUT DESIGN
+	6.  COLL TO ACTION
+	7.  FEATURES DESIGN
+	8.  SCREENSHOTS DESIGN
+	9.  PROMO DESIGN
+	10. PRICING TABLE DESIGN
+	11. VIDEO DESIGN
+	12. APP-REVIEW DESIGN
+	13. BLOG DESIGN
+	14. FAQ DESIGN
+	15. CONACT DESIGN
+	16. FOOTER DESIGN
+	
+----------------------------------------*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 26px;
+	overflow-x: hidden;
+	color: #5a656e;
+	zoom: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	line-height: normal;
+	color: #25272b;
+	margin-top: 0;
+	margin-bottom: 15px;
+
+}
+
+h4,
+h5,
+h6 {
+	margin-top: 0;
+}
+
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+/* Preloader*/
+
+.preloader {
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 99999;
+}
+
+.spinner {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	font-size: 10px;
+	text-indent: -12345px;
+	z-index: 10000;
+}
+
+.double-bounce1,
+.double-bounce2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@keyframes sk-bounce {
+
+	0%,
+	100% {
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	}
+
+	50% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02. START MENU DESIGN DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+#mobile_menu {
+	display: none;
+}
+
+.navbar-brand {
+	padding: 0px;
+	margin-top: 7px;
+}
+
+.navbar-brand img {
+	margin-left: 10px;
+}
+
+#navigation {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	background-color: white;
+	transition: all 0.5s ease 0s;
+}
+
+#navigation li {
+	display: inline-block;
+}
+
+#navigation li a {
+	color: #fff !important;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+#navigation.menu-shrink {
+	/* Chrome 10-25, Safari 5.1-6 */
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
+	background-color: white;
+	width: 100%;
+	-webkit-animation: fadeInDown 800ms;
+	animation: fadeInDown 800ms;
+	-webkit-backface-visibility: hidden;
+}
+
+#navigation.menu-shrink li a {
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+#navigation.menu-top li a:hover,
+#navigation.menu-shrink li a:hover {
+	color: #25272b;
+}
+
+.header_right {
+	display: flex;
+	padding-top: 5px;
+}
+
+.navbar-default .navbar-toggle {
+	background: #fff none repeat scroll 0 0
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #fff
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #75ceae
+}
+
+#mobile_menu .slicknav_nav li {
+	display: block;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02. END MENU DESIGN DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03. START SLIDER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.welcome-area {
+	background-image: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: relative;
+
+}
+
+.bg_image:before {
+	background-image: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	background-image: linear-gradient(to right, #00c9fd, #81ee8e);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	content: '';
+	opacity: 0.9;
+}
+
+.welcome-area,
+.single-slide-item {
+	height: 700px;
+}
+
+.single-slide-item-table {
+	display: table;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+
+}
+
+.single-slide-item-tablecell {
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+.single_slide_text {
+	margin-top: 10%;
+	position: relative;
+}
+
+.single_slide_text h1 {
+	color: #fff;
+	font-size: 41px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.05);
+}
+
+.single_slide_text p {
+	color: #fff;
+	margin-bottom: 45px;
+	margin-top: 45px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.slider_image {
+	margin-top: 50px;
+	position: relative;
+}
+
+.slider_image img {
+	max-width: 100%;
+}
+
+.slider_active {
+	position: relative;
+}
+
+.slider_active .swiper-button-prev:after,
+.slider_active .swiper-button-next:after {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	background: #fff !important;
+	color: #00c9fd;
+	font-size: 13px !important;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	line-height: 45px !important;
+	transition: .5s;
+	top: 46%;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.0999);
+}
+
+.slider_active .swiper-button-prev:after {
+	left: 15px;
+}
+
+.slider_active .swiper-button-next:after {
+	right: 15px;
+}
+
+
+/* START Particles JS */
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 700px;
+	top: 0;
+}
+
+/* Animation  */
+
+.slider_title {
+	-webkit-animation-delay: 0.9s;
+	animation-delay: 0.9s;
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+.slider_subtitle {
+	-webkit-animation-delay: 1.1s;
+	animation-delay: 1.1s;
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+.slider_btn {
+	-webkit-animation-delay: 1.3s;
+	animation-delay: 1.3s;
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+.slider_image {
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+
+/* Buttons  CSS*/
+
+.google_play,
+.app_store {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #00c9fd;
+	padding: 15px 32px;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 5px;
+	text-transform: uppercase;
+	transition: 0.3s;
+	display: inline-block;
+}
+
+.google_play:hover,
+.google_play:focus,
+.app_store:hover,
+.app_store:focus {
+	background: transparent;
+	border-color: #fff;
+	color: #fff;
+	text-decoration: none;
+}
+
+.app_btn .google_play {
+	margin-right: 20px;
+}
+
+.appbutton {
+	border: 1px solid #81ee8e;
+	background: #fff;
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: #ffff;
+	padding: 13px 32px;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: 0.3s;
+	display: inline-block;
+}
+
+.appbutton:hover,
+.appbutton:focus {
+	border-color: #81ee8e;
+	background: #fff;
+	color: #81ee8e;
+	text-decoration: none;
+}
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03. END SLIDER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04. START SECTION HEADING
+* ----------------------------------------------------------------------------------------
+*/
+
+.section_padding {
+	padding: 80px 0;
+}
+
+.section_heading {
+	margin-bottom: 60px;
+}
+
+.section_heading h2 {
+	font-size: 26px;
+	margin-bottom: 15px;
+	margin-top: 0;
+	font-weight: 600;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+
+.section_heading h2 span {
+	font-weight: 700;
+}
+
+.section_heading p {
+	font-size: 14px;
+	display: inline-block;
+	font-weight: 500;
+	margin: 0;
+}
+
+.gray_section {
+	background: #fbfbfb;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04. END SECTION HEADING
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05. START ABOUT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+#about {
+	padding-bottom: 30px;
+}
+
+.single_about {
+	text-align: left;
+	padding: 30px;
+	margin-bottom: 30px;
+	transition: .5s;
+}
+
+.single_about:hover {
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.single_about h3 {
+	font-size: 20px;
+
+}
+
+.about_icon {
+	margin-bottom: 18px;
+	margin-right: 18px;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	line-height: 83px;
+	color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.0999);
+	float: left;
+	text-align: center;
+}
+
+.about_icon i {
+	font-size: 30px;
+}
+
+.sing_about_text {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+}
+
+.sing_about_text p {
+	margin-bottom: 0;
+}
+
+.sing_about_text i {
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	right: 0;
+	left: auto;
+	font-size: 80px;
+	color: rgba(0, 0, 0, 0.022);
+	display: inline-block;
+	margin: auto;
+	z-index: -1;
+	text-align: center;
+}
+
+.green {
+	background-image: linear-gradient(135deg, #5aaf46, #7fdb48);
+}
+
+.red {
+	background-image: linear-gradient(135deg, #ef4368, #f2708c);
+}
+
+.blue {
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05. END ABOUT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06. START COLL TO ACTION DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+#coll_action_section {}
+
+.coll_action_text {
+	padding-top: 20px;
+}
+
+.cl_title {
+	color: #00c9fd;
+	font-weight: 600;
+	font-size: 17px;
+	margin-bottom: 10px;
+	display: block;
+
+}
+
+.coll_action_text h3 {
+	font-size: 27px;
+	margin-bottom: 20px;
+}
+
+.coll_action_btn {
+	padding-top: 20px;
+}
+
+.coll_action_btn a {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06. END COLL TO ACTION DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07. START FEATURES DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+#features {}
+
+.single_feature {
+	text-align: center;
+	padding: 30px;
+	margin-bottom: 30px;
+	border: 1px solid #f1f1f1;
+	transition: .5s;
+
+}
+
+.single_feature:hover {
+	background-image: url(../images/service-bg.jpg);
+	background-color: #333;
+	background-size: cover;
+	color: #fff;
+}
+
+.single_feature:hover h3 {
+	color: #fff;
+}
+
+.single_feature h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.single_feature .border_line {
+	background: #00c9fd;
+	width: 40px;
+	height: 1px;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 17px;
+}
+
+.feature_icon {
+	margin-bottom: 18px;
+	margin-right: 18px;
+	display: inline-block;
+	color: #00c9fd;
+	text-align: center;
+}
+
+.feature_icon i {
+	font-size: 30px;
+}
+
+.sing_feature_text p {
+	margin-bottom: 0;
+}
+
+.sing_feature_text {
+	position: relative;
+	overflow: hidden;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07. END FEATURES DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08. START SCREENSHOTS DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.center-block {
+	float: inherit;
+}
+
+.single_screenshot {
+	opacity: .7;
+	margin: 0 10px;
+	text-align: center;
+
+}
+
+.single_screenshot img {
+	max-width: 100%;
+	display: inline-block;
+	padding: 20px 0;
+}
+
+.single_screenshot.slick-current.slick-active {
+	opacity: 1;
+	transform: scale(1.1);
+
+}
+
+.app_screens_slider .slick-dots {
+	bottom: -40px;
+}
+
+.app_screens_slider .slick-dots li button::before {
+	color: #00c9fd;
+	width: 7px;
+	height: 7px;
+	border: 1px solid #81ee8e;
+	background: #00c9fd;
+	color: transparent;
+	border-radius: 50%;
+	opacity: 1;
+}
+
+.app_screens_slider .slick-dots li.slick-active button::before {
+	width: 11px;
+	height: 11px;
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 0 0 8px #81ee8e;
+	margin-top: -2px;
+}
+
+.app_screens_slider .slick-dots li {
+	margin: 0 2px;
+}
+
+.review_slider .swiper-button-prev:after,
+.review_slider .swiper-button-next:after,
+.app_screens_slider .slick-prev,
+.app_screens_slider .slick-next {
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+	width: 45px;
+	height: 45px;
+	border-radius: 50% !important;
+	z-index: 100;
+}
+
+.app_screens_slider .slick-prev {
+	left: -5%;
+}
+
+.app_screens_slider .slick-next {
+	right: -5%;
+}
+
+.slick-next::before {
+	content: "\e628";
+	font-family: 'themify';
+}
+
+.slick-prev::before {
+	content: "\e629";
+	font-family: 'themify';
+}
+
+.slick-next::before,
+.slick-prev::before {
+	font-size: 15px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08. END SCREENSHOTS DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09. START PROMO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.promo_img img {
+	display: inline-block;
+}
+
+.single_promo {
+	margin-top: 30px;
+}
+
+.single_promo .promo_icon {
+	border: 1px solid #81ee8e;
+	font-size: 30px;
+	margin-right: 30px;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	color: #81ee8e;
+	border-radius: 50%;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.077);
+	float: left;
+	text-align: center;
+	transition: .5s;
+}
+
+.single_promo:hover .promo_icon {
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-color: #81ee8e;
+	color: #fff;
+}
+
+.single_promo .promo_details {
+	overflow: hidden;
+}
+
+.single_promo .promo_details h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09. END PROMO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10 START PRICING TABLE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+#pricing_table {
+	padding-bottom: 50px;
+
+}
+
+
+.pricingTable {
+	text-align: center;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
+	padding: 0px 0 30px;
+	margin-bottom: 30px;
+
+}
+
+.pricingTable .price {
+	margin: 0px 0 15px;
+	overflow: hidden;
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+	padding: 30px;
+}
+
+.pricingTable .heading {
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	transition: all 0.4s ease 0s;
+	color: #fff;
+}
+
+.pricingTable .price-value {
+	font-size: 40px;
+	color: #00c9fd;
+	font-weight: 700;
+	margin: 0px 0;
+	display: inline-block;
+	line-height: normal;
+	color: #fff;
+}
+
+.pricingTable .month {
+	display: block;
+	font-size: 13px;
+	text-transform: lowercase;
+}
+
+.pricingTable .pricingContent {
+	padding-bottom: 30px;
+}
+
+.pricingTable .pricingContent ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.pricingTable .pricingContent ul li {
+	padding: 13px 0;
+	border-bottom: 1px solid #f1f1f1;
+	color: #5a656e;
+}
+
+.pricingTable .pricingContent ul li i {
+	margin: 0 10px 0 0;
+	color: #00c9fd;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10. END PRICING TABLE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11. START VIDEO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.video_section {}
+
+.video_area {
+	box-shadow: 17px 17px 30px rgba(0, 201, 253, 0.3);
+
+}
+
+#video {
+	position: relative;
+	background: #000;
+	width: 100%;
+	margin: 0px auto;
+	border-radius: 4px;
+}
+
+#video img,
+#video iframe {
+	display: block;
+	border-radius: 4px;
+
+}
+
+#play {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background: url('../images/play-button.png') no-repeat 50% 50%;
+	background-size: auto, cover;
+	z-index: 1;
+}
+
+#play:hover {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+img {
+	max-width: 100%;
+}
+
+.video_content {
+	padding: 0 50px 0px;
+}
+
+.video_content h3 {
+	font-size: 26px;
+	margin-top: 0;
+	font-weight: 600;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+
+.video_content a {
+	margin-top: 20px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11. END VIDEO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12. START APP-REVIEW DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.testimonial {
+	text-align: center;
+	margin: 66px 15px 5px;
+	padding: 0 10% 1%;
+	background: #fff;
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.055);
+}
+
+.testimonial .pic {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-top: -50px;
+	overflow: hidden;
+	box-shadow: 0 2px 30px rgba(0, 0, 0, 0.088);
+}
+
+.testimonial .pic img {
+	width: 100%;
+	height: auto;
+}
+
+.testimonial .description {
+	font-size: 16px;
+	font-style: italic;
+	line-height: 30px;
+	margin: 20px 0 10px;
+	position: relative;
+	z-index: 5;
+}
+
+.testimonial .testimonial-title {
+	font-size: 16px;
+	margin: 20px 0 5px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #00c9fd;
+	font-weight: 400;
+}
+
+.testimonial .post {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+
+.testimonial i.ti-quote-right {
+	position: absolute;
+	color: rgba(0, 0, 0, 0.06);
+	font-size: 45px;
+	right: 45px;
+	bottom: 45px;
+	z-index: 1;
+}
+
+.review_slider {
+	position: relative;
+}
+
+.review_slider .swiper-button-prev:after,
+.review_slider .swiper-button-next:after {
+	top: 45%;
+	position: absolute;
+	line-height: 45px !important;
+	font-size: 13px !important;
+}
+
+.review_slider .owl-prev {
+	left: -5%;
+}
+
+.review_slider .owl-next {
+	right: -5%;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 12. END APP-REVIEW DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 13. START BLOG DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+#blog {
+	padding-bottom: 50px;
+}
+
+.single_blog {
+	background: #fff;
+	border: 1px solid #f1f1f1;
+	margin-bottom: 30px;
+}
+
+.post_image {
+	position: relative;
+}
+
+.post_date {
+	position: absolute;
+	bottom: 0;
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 8px 15px;
+	color: #fff;
+	margin: 20px;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 2px;
+}
+
+.single_blog h4 {
+	margin-top: 25px;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.single_blog h4 a {
+	color: #25272b;
+	transition: .5s;
+}
+
+.single_blog h4 a:hover,
+.single_blog h4 a:focus {
+	color: #00c9fd;
+}
+
+.blog_post_content {
+	padding: 0 20px 5px;
+}
+
+.blog_info {
+	margin-bottom: 10px;
+}
+
+.blog_info a {
+	color: #5a656e;
+	transition: .5s;
+}
+
+.blog_info a:hover,
+.blog_info a:focus {
+	color: #00c9fd;
+}
+
+.blog_info li {
+	padding: 4px 15px;
+	border: 1px solid #ddd;
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	border-radius: 30px;
+	text-align: center;
+	color: #00c9fd;
+	font-size: 12px;
+}
+
+.blog_info i {
+	color: #00c9fd;
+	padding-right: 2px;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 13. END BLOG DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 14. START FAQ DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.accor_padding_top {}
+
+.accordion-item {
+	border-radius: 0;
+	margin-bottom: 18px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+
+}
+
+.accordion-item .panel-heading {
+	padding: 0;
+
+}
+
+.accordion-item .panel-title {
+	position: relative;
+	font-size: 16px;
+
+}
+
+.accordion-item .accordion-button {
+	color: #fff;
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	display: block;
+	padding: 18px 10px 18px 65px;
+}
+
+.accordion-item .accordion-button.collapsed {
+	color: #25272b;
+	background: #fff;
+
+}
+
+.accordion-item .accordion-header button:before,
+.accordion-item .accordion-header button.collapsed:before {
+	font-size: 13px;
+	content: "\e622";
+	font-family: 'themify';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #00c9fd;
+	background: #fff;
+	height: 36px;
+	width: 36px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 50%;
+
+}
+
+.accordion-item .accordion-header button.collapsed:before {
+	content: "\e61a";
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	color: #fff;
+	font-family: 'themify';
+
+}
+
+.accordion-item .accordion-body {
+	border-color: #fafafa;
+	padding: 20px;
+}
+
+.accordion-item .accordion-body p {
+	margin-bottom: 0;
+}
+
+.accordion-item .panel-default {
+	border-color: #fafafa;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 14. END FAQ DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 15. START CONACT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.cont_title {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+
+.contact_form {
+	padding: 33px;
+	background: #fff;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-message.success {
+	border: 1px solid #00c9fd;
+	padding: 10px;
+}
+
+.form-message {
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+.form-message.error {
+	border: 1px solid red;
+	padding: 10px;
+}
+
+.form-control {
+	border-radius: inherit;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #f1f1f1;
+	box-shadow: inherit;
+	padding: 10px 18px;
+	border-radius: 4px;
+}
+
+.form-control:focus {
+	border-color: #00c9fd;
+	box-shadow: inherit;
+}
+
+.contact_form textarea {
+	height: 140px;
+	line-height: 26px;
+	border-radius: 4px;
+}
+
+.contact_form .form-group {
+	margin-bottom: 30px;
+}
+
+#map {
+	height: 493px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+#map iframe {
+	width: 100%;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 15. END CONACT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 16. START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+#footer {
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding: 60px 0;
+	color: #fff;
+}
+
+
+.single_subscribe_content h3 {
+	font-size: 26px;
+	margin-bottom: 15px;
+	margin-top: 0;
+	font-weight: 600;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	color: #fff;
+}
+
+.single_subscribe_content {
+	margin-bottom: 40px;
+}
+
+.smain_form .form-group {
+	position: relative;
+	width: 350px;
+	display: inline-block;
+}
+
+.smain_form .form-control {
+	width: 350px;
+	border-radius: 30px;
+	padding: 10px 20px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.smain_form .form-control:focus {
+	border-color: #fff;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.smain_form .btn.btn-default {
+	color: #333;
+	background: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00c9fd, #81ee8e);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #ffff;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	border-radius: 0 30px 30px 0;
+	top: 0;
+	right: 0;
+	transition: .5s;
+	border: inherit;
+}
+
+
+.social_link {
+	margin: 40px 0 15px;
+
+}
+
+.social_link a {
+	color: #fff;
+	margin: 0 5px;
+	border: 1px solid #fff;
+	height: 45px;
+	line-height: 45px;
+	width: 45px;
+	font-size: 18px;
+	border-radius: 100%;
+	transition: 0.4s;
+	display: inline-block;
+}
+
+.social_link a:hover {
+	background: #fff;
+	color: #00c9fd;
+
+}
+
+.copyrigt_text p {
+	margin: 0;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 16. END FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.page_banner {
+	background-image: -webkit-linear-gradient(to right, #00c9fd, #81ee8e);
+	background-image: linear-gradient(to right, #00c9fd, #81ee8e);
+	position: relative;
+	padding: 159px 0 90px;
+}
+
+.banner_overlay {}
+
+.banner_overlay .section-blog-title {
+	color: #fff;
+	font-size: 35px;
+	text-transform: capitalize;
+}
+
+.send-message-info i {
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border: 1px solid #222;
+	color: #fff;
+	background-color: #222;
+	display: inline-block;
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+
+.send-message-info h4 {
+	margin-bottom: 40px;
+}

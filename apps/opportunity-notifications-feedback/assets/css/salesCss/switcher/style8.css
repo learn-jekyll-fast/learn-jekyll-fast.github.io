@@ -1,0 +1,84 @@
+.slider_active .swiper-button-prev:after,
+.slider_active .swiper-button-next:after,
+.google_play,
+.app_store,
+.cl_title,
+.feature_icon,
+.pricingTable .pricingContent ul li i,
+.testimonial .testimonial-title,
+.blog_info i,
+.blog_info a:hover,
+.blog_info a:focus,
+.single_blog h4 a:hover,
+.single_blog h4 a:focus,
+.accordion-item .accordion-header button::before,
+.social_link a:hover {
+	color: #eb3349;
+
+}
+
+#accordion .panel-title a.collapsed:before {
+	color: #fff;
+}
+
+.single_feature .border_line {
+	background: #eb3349;
+}
+
+#style-switcher h2 a,
+.welcome-area,
+.blue,
+.appbutton,
+.review_slider .swiper-button-prev:after,
+.review_slider .swiper-button-next:after,
+.app_screens_slider .slick-prev,
+.app_screens_slider .slick-next,
+.app_screens_slider .slick-dots li.slick-active button::before,
+.single_promo:hover .promo_icon,
+.pricingTable .price,
+.post_date,
+.accordion-item .accordion-button,
+.accordion-item .accordion-header button.collapsed::before,
+#footer,
+.smain_form .btn.btn-default,
+.preloader {
+	background: -webkit-linear-gradient(to right, #eb3349, #f45c43);
+	background: linear-gradient(to right, #eb3349, #f45c43);
+	border-color: #f45c43;
+}
+
+.bg_image:before {
+	background-image: -webkit-linear-gradient(to right, #eb3349, #f45c43);
+	background-image: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+.app_screens_slider .slick-dots li.slick-active button::before {
+	box-shadow: 0 0 8px #f45c43;
+}
+
+.app_screens_slider .slick-dots li button::before {
+	background: #eb3349;
+	color: transparent;
+	border: 1px solid #eb3349;
+
+}
+
+.appbutton,
+.form-control:focus {
+	border-color: #f45c43;
+}
+
+.appbutton:hover,
+.appbutton:focus {
+	color: #eb3349;
+	border-color: #eb3349;
+}
+
+.single_promo .promo_icon {
+	border-color: #eb3349;
+	color: #eb3349;
+}
+
+.video_area {
+	box-shadow: 17px 17px 30px rgba(235, 51, 73, 0.3);
+}

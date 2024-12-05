@@ -23,6 +23,10 @@ function updateDashboard() {
   const storedUser = JSON.parse(sessionStorage.getItem('user'));
 
   document.getElementById('name').innerText = `${storedUser.name}`;
+  if (window.location.href.match('dashboard.html')) {
+    document.getElementById('dashboard-title').innerText = `Hello, ${storedUser.name}`;
+  }
+
   document.getElementById('email').innerText = `${storedUser.email}`;
   document.getElementById('profile-pic').src = `${storedUser.picture}`;
   console.log('Calling Data ' + JSON.stringify(storedUser.name));
