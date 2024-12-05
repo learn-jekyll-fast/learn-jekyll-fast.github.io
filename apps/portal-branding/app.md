@@ -8,7 +8,7 @@ blurb: "Brand your protal to next level in a minute"
 
 <link rel="manifest" href="manifest.json"/>
 
-<script defer="defer" src="static/js/main.7a9a3049.js"></script>
+<script defer="defer" src="static/js/main.8660a2ef.js"></script>
 
 <link href="static/css/main.8fea0362.css" rel="stylesheet">
 
