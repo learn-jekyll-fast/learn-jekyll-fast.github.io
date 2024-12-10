@@ -6,7 +6,7 @@
   <div id="mySidenav" class="sidenav">
     <img id="logo" src="/assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div id="nav-list-admin" class="hidden">
+    <div id="nav-list" onload="navListClick(0)">
       <a id="dashboard" href="/dashboard.html" class="{% if page.tab == 'dashboard' %}active{% endif %}"><span
           class="material-icons-outlined text-primary" style="margin-right: 20px;">
           dashboard
@@ -16,7 +16,7 @@
           class="material-icons-outlined text-primary" style="margin-right: 20px;">
           dashboard
         </span>Apps</a>
-	  <a id="metrics" href="/apps/control-panel/app.html" class="{% if page.tab == 'dashboard' %}active{% endif %}"><span
+	  <a id="metrics" href="/apps/control-panel/app.html" class="{% if page.tab == 'applications' %}active{% endif %}"><span
           class="material-icons-outlined text-primary" style="margin-right: 20px;">
           dashboard
         </span>Metrics</a>
@@ -34,12 +34,6 @@
             dashboard
           </span>Sales Page</a>
       </div>
-    </div>
-    <div id="nav-list">
-      <a id="apps" href="/applications.html" class="{% if page.tab == 'applications' %}active{% endif %}"><span
-          class="material-icons-outlined text-primary" style="margin-right: 20px;">
-          dashboard
-        </span>Apps</a>
     </div>
   </div>
   <script>
