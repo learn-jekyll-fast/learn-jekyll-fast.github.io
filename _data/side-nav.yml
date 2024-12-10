@@ -1,0 +1,11 @@
+- title: Dashboard
+  url: /dashboard.html
+- title: Applications
+  url: /applications
+- title: Customization
+  url: #
+  sub_nav:
+    - title: Portal Branding
+      url: ddd
+    - title: Sales Page
+      url: ddd

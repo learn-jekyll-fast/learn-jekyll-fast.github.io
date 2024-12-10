@@ -1,7 +1,57 @@
+
 function init() {
-  navListClick(0);
+  if (window.location.href.match('dashboard.html')) {
+    navListClick(0);
+  }
+  if (window.location.href.match('applications.html')) {
+    selectedTab('all')
+  }
+  updateDashboard();
+  truncateName();
 }
-window.onload = init;
+window.onload = init
+
+function truncateName() {
+  const nameElement = document.getElementById("name");
+  const fullName = nameElement.textContent;
+  const nameParts = fullName.split(" ");
+  nameElement.textContent = `${nameParts[0]} ${nameParts[1].charAt(0)}.`;
+}
+
+function updateDashboard() {
+  console.log('Retriving Data');
+  const storedUser = JSON.parse(sessionStorage.getItem('user'));
+
+  document.getElementById('name').innerText = `${storedUser.name}`;
+  if (window.location.href.match('dashboard.html')) {
+    document.getElementById('dashboard-title').innerText = `Hello, ${storedUser.name}`;
+  }
+
+  document.getElementById('email').innerText = `${storedUser.email}`;
+  document.getElementById('profile-pic').src = `${storedUser.picture}`;
+  console.log('Calling Data ' + JSON.stringify(storedUser.name));
+
+  const isAdmin = storedUser.role === 'admin' ? true : false;
+
+  if (isAdmin) {
+    console.log('IS ADMIN');
+    document.getElementById("nav-list").classList.add('hidden');
+    document.getElementById("nav-list-admin").classList.add('visible');
+
+  } else {
+    document.getElementById("nav-list").classList.add('visible');
+    document.getElementById("nav-list-admin").classList.add('hidden');
+    document.getElementById("app-tabs").classList.add('hidden');
+  }
+
+
+}
+
+function adminView() {
+  const storedUser = JSON.parse(sessionStorage.getItem('user'));
+  const isAdmin = storedUser.role === 'Admin' ? true : false;
+
+}
 
 
 function navListClick(index) {
@@ -34,7 +84,7 @@ function navListClick(index) {
     default:
       break;
   }
-  var navList = document.getElementById("nav-list").children;
+  var navList = document.getElementById("nav-list-admin").children;
   for (var i = 0; i < navList.length; i++) {
     navList[i].addEventListener("click", function () {
       var current = document.getElementsByClassName("active");
@@ -62,7 +112,7 @@ function closeNav() {
   document.getElementById("logo").style.display = "block";
 }
 
-function openCity(evt, cityName) {
+function selectedTab(tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -79,16 +129,16 @@ function openCity(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById('test').style.display = "block";
-  evt.currentTarget.className += " active";
+  document.getElementById(tabName).style.display = "block";
+  document.getElementById(`${tabName}-tab`).className += " active";
 }
 
-  function selectRating(selected) {
-    // Remove 'text-primary' class from all spans
-    const spans = document.querySelectorAll('.modal-radio-buttons');
-    spans.forEach(span => {
-      span.classList.remove('text-primary');
-    });
-    // Add 'text-primary' class to the selected span
-    selected.classList.add('text-primary');
-  }
+function selectRating(selected) {
+  // Remove 'text-primary' class from all spans
+  const spans = document.querySelectorAll('.modal-radio-buttons');
+  spans.forEach(span => {
+    span.classList.remove('text-primary');
+  });
+  // Add 'text-primary' class to the selected span
+  selected.classList.add('text-primary');
+}

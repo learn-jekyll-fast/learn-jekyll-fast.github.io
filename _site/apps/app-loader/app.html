@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Rapid Deploy</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/css/leftStyle.css">
   <link rel="stylesheet" href="/css/topStyle.css">
@@ -19,7 +20,7 @@
 <html lang="en">
 
 <body>
-  <header id="header" class="app-bar">
+  <nav id="header" class="app-bar">
     <div class="toolbar">
       <img id="logo" src="/assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
       <button id="menu-icon" class="icon-button" aria-label="open drawer">
@@ -31,18 +32,43 @@
       <div class="notification-area">
         <a href="#" class="notification">
           <span class="account-icon">👤</span>
-          <span class="badge">3</span>
+          <span class="badge">1</span>
         </a>
-        <button class="icon-button" aria-label="account of current user">
-          <span class="account-icon">👤</span>
-        </button>
-        <div class="user-info">
-          <span class="user-name">N.P</span>
-          <span class="user-role">Manager</span>
+        <div class="row dropbtn" onclick="toggleMenu()">
+          <button class="icon-button " aria-label="account of current user">
+            <img id="profile-pic" alt="Avatar" class="avatar">
+          </button>
+          <div class="user-info">
+            <span id="name" class="user-name">Username</span>
+          </div>
         </div>
+
       </div>
+
     </div>
-  </header>
+  </nav>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  <script>
+
+    function toggleMenu() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // // Close the dropdown menu if the user clicks outside of it
+    // window.onclick = function (event) {
+    //   if (!event.target.matches('.dropbtn')) {
+    //     var dropdowns = document.getElementsByClassName("dropdown-content");
+    //     var i;
+    //     for (i = 0; i < dropdowns.length; i++) {
+    //       var openDropdown = dropdowns[i];
+    //       if (openDropdown.classList.contains('show')) {
+    //         openDropdown.classList.remove('show');
+    //       }
+    //     }
+    //   }
+    // }
+  </script>
 </body>
 
 </html>
@@ -54,7 +80,7 @@
   <div id="mySidenav" class="sidenav">
     <img id="logo" src="/assets/images/logo/align-hcm-logo.png" width="60" height="25" alt="logo" class="logo">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div id="nav-list" onload="navListClick(0)">
+    <div id="nav-list-admin" class="hidden">
       <a id="dashboard" href="/dashboard.html" class=""><span
           class="material-icons-outlined text-primary" style="margin-right: 20px;">
           dashboard
@@ -82,6 +108,12 @@
             dashboard
           </span>Sales Page</a>
       </div>
+    </div>
+    <div id="nav-list">
+      <a id="apps" href="/applications.html" class=""><span
+          class="material-icons-outlined text-primary" style="margin-right: 20px;">
+          dashboard
+        </span>Apps</a>
     </div>
   </div>
   <script>
@@ -139,13 +171,7 @@
         style="color: #fff;  border: none; border-radius: 50px; width: 40px; height: 40px; ;">
         <span style="font-size: 24px;">+</span> <!-- AddIcon -->
       </button>
-      <button class="background-primary"
-        style="height: 40px; text-transform: inherit; color: #fff; margin-right: 20px;border: none; border-radius: 50px; padding: 5px 20px; display: flex; align-items: center; ">
-        <span class="material-icons-outlined">
-          location_on
-        </span>
-        Digital Innovation Center
-      </button>
+
     </div>
     <div style="display: flex; height: 20px; justify-content: center; align-items: center;">
       <p style="text-align: center; color: white;">© 2024 Align HCM, All Rights Reserved</p>
@@ -166,7 +192,7 @@
       </div>
       <div class="modal-body">
         <p class="modal-description">Please rate your experience on this page:</p>
-        <div class="rating">
+        <div id="rating" class="rating">
           <!-- Placeholder for rating icons -->
           <span class="material-icons-outlined modal-radio-buttons" onclick="selectRating(this)">
             sentiment_very_dissatisfied
@@ -184,22 +210,30 @@
             sentiment_very_satisfied
           </span>
         </div>
-        <label for=" select-job">What is the nature of your feedback?</label>
-        <select id="select-job">
-          <option value="">Select...</option>
-          <!-- Add options here -->
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
+        <form class="column">
 
-        <label for="feedback-text">What would you like to share with us?</label>
-        <textarea id="feedback-text" placeholder="Placeholder" rows="3"></textarea>
+          <label for="subject">Subject</label>
+          <input type=text id="subject" placeholder="Enter subject" />
 
-        <label for="email">Please leave your email if you would like to be contacted</label>
-        <input type="email" id="email" placeholder="Enter email" />
+          <label for="select-job">What is the nature of your feedback?</label>
+          <select id="select-job">
+            <option value="">Choose a subject</option>
+            <!-- Add options here -->
+            <option value="general">General Feedback</option>
+            <option value="opportunity-creator">Opportunity Creator</option>
+            <option value="opportunity-notifications">Opportunity Notifications</option>
+          </select>
 
-        <button class="submit-button" onclick="submitFeedback()">Submit</button>
+          <label for="feedback-text">What would you like to share with us?</label>
+          <textarea id="feedback-text" placeholder="Placeholder" rows="3"></textarea>
+
+          <label for="email">Please leave your email if you would like to be contacted</label>
+          <input type="email" id="email" placeholder="Enter email" />
+
+          <button id="submit" type="submit" class="submit-button center"><i id="feedback-loading"
+              class="fa fa-spinner fa-spin mv5 hidden"></i>
+            Submit</button>
+        </form>
       </div>
     </div>
   </div>
@@ -208,17 +242,66 @@
       const element = document.getElementById('feedback-modal');
       element.classList.remove("visible");
       element.classList.add("hidden");
+      hideFeedbackLoading();
     }
     function openModal() {
       const element = document.getElementById('feedback-modal');
       element.classList.remove("hidden");
       element.classList.add("visible");
-
     }
+    function showFeedbackLoading() {
+      const element = document.getElementById('feedback-loading');
+      element.classList.remove("hidden");
+      element.classList.add("visible");
+    }
+    function hideFeedbackLoading() {
+      const element = document.getElementById('feedback-loading');
+      element.classList.remove("visible");
+      element.classList.add("hidden");
+    }
+
+    async function submit() {
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', async event => {
+        event.preventDefault();
+        let stars = document.getElementsByClassName("modal-radio-buttons");
+        let i = 0;
+        var rating = 0;
+        while (i < stars.length) {
+          if (stars[i].classList.contains('text-primary')) {
+            rating = i + 1;
+            break;
+          }
+          i++;
+        }
+        const summary = document.querySelector('#subject').value;
+        const serviceName = document.querySelector('#select-job').value;
+        const issueDescription = document.querySelector('#feedback-text').value;
+
+        const data = {
+          summary: summary,
+          serviceName: serviceName,
+          issueDescription: issueDescription,
+          rating: rating
+        };
+        showFeedbackLoading();
+        const response = await submitFeedback(data);
+        closeModal();
+        console.log('RESPONSE:  ' + JSON.stringify(response));
+        // updateTodoList(submitTodoItem);
+      });
+    }
+
+    submit();
   </script>
 </body>
   </div>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/js/okta.js"></script>
   <script src="/js/home.js"></script>
+  <script src="/js/apis.js"></script>
 </body>
 
 </html>

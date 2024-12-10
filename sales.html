@@ -52,6 +52,9 @@ btn-app-store: App Store
 
     document.getElementById('login-btn').addEventListener('click', async () => {
       await auth0.loginWithRedirect();
+      const user = await auth0.getUser();
+
+      console.log(JSON.stringify(user));
     });
   })();
 </script>

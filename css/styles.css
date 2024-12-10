@@ -1,3 +1,10 @@
+.avatar {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -47,7 +54,7 @@
 .tab {
   overflow: hidden;
   background-color: #ffffff;
-  width: 450px;
+  width: 600px;
   border-radius: 10px;
 }
 
@@ -334,4 +341,179 @@
   cursor: pointer;
   font-size: 16px;
   /* Font size */
+}
+
+/* PORTAL 1 */
+.portal1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS */
+.company-name-container {
+  margin-top: 24px;
+  /* Adjust as needed */
+}
+
+.company-name-label {
+  font-weight: 400;
+  display: block;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  /* Adjust as needed */
+}
+
+.required {
+  margin-left: 4px;
+  color: red;
+}
+
+.company-name-input {
+  margin: 8px 0;
+  /* Adjust as needed */
+  padding: 8px;
+  /* Adjust as needed */
+  width: 100%;
+  /* Adjust as needed */
+  box-sizing: border-box;
+  /* Ensures padding is included in width */
+}
+
+.linear-progress {
+  width: 100%;
+  margin-top: 5px;
+  /* Adjust as needed */
+  height: 16px;
+  border-radius: 6px;
+  background-color: #D1D2D5;
+  overflow: hidden;
+  /* Ensures the inner bar doesn't overflow */
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #0DCBFD;
+  /* Use CSS variable or adjust as needed */
+  transition: width 0.3s ease;
+  /* Smooth transition for the progress */
+}
+
+.portal-footer {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.portal-submit-button {
+  background-color: #3E3091;
+  color: white;
+  /* Replace with actual color */
+  border-radius: 50px;
+  padding: 10px 10px;
+  width: 300px;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-self: center;
+
+
+  /* Replace with actual width */
+}
+
+.competitor-container {
+  margin-top: 16px;
+}
+
+.competitor-header {
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.competitor-title {
+  font-size: 14px;
+}
+
+.competitor-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 8px;
+  align-items: center;
+}
+
+.chip {
+  padding: 0.4rem 0.4rem;
+  background-color: #0DCBFD;
+  /* Use CSS variable or define a specific color */
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.competitor-chip {
+  padding: 12px 8px;
+  background-color: #e0e0e0;
+  /* Replace with colors.chipColor */
+  display: flex;
+  align-items: center;
+}
+
+.delete-chip {
+  margin-left: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.no-competitors {
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.add-competitor {
+  display: flex;
+  margin-top: 16px;
+}
+
+.competitor-input {
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+.back-button {
+  /* Replace with desired color */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--blue-button);
+  border-radius: 8px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  color: var(--blue-button);
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: var(--blue-button);
+  /* Replace with desired color */
+  width: 40px;
+  height: 40px;
+  color: white;
+  /* Replace with colors.white */
+  border-radius: 5px;
+  padding: 8px 8px;
+  margin: 8px 2px;
+  cursor: pointer;
+  font-size: large;
+}
+
+/* PORTAL3 */
+.image-container {
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgb(154, 154, 154);
+  border-radius: 40px;
 }

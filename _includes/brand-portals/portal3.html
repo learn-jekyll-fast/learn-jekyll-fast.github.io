@@ -1,0 +1,77 @@
+<div class="center column" style=" width: 50vw; max-width: 700px;">
+  <div>
+    <div>
+      <h4>Find Your Logo</h4>
+      <p style="margin-top: 16px;">We’ve found a few images from your site—see if your logo is in the mix!</p>
+    </div>
+    <div class="row wrap center" style="margin: 5px 0px;">
+      <div class="image-container center wrap m5">
+        <img src="../../assets/images/logo1.png" />
+      </div>
+
+      <div class="image-container center wrap mv5">
+        <img src="../../assets/images/logo2.png" />
+      </div>
+      <div class="image-container center wrap mv5">
+        <img src="../../assets/images/logo3.png" />
+      </div>
+      <div class="image-container center wrap mv5">
+        <img src="../../assets/images/logo4.png" />
+      </div>
+      <div class="image-container center wrap mv5">
+        <img src="../../assets/images/logo5.png" />
+      </div>
+      <div class="image-container center wrap mv5">
+        <img src="../../assets/images/logo6.png" />
+      </div>
+      <div class="image-container center wrap m5">
+        <img src="../../assets/images/logo7.png" />
+      </div>
+      <div class="image-container center wrap m5">
+        <img src="../../assets/images/logo8.png" />
+      </div>
+      <div class="image-container center wrap m5">
+        <img src="../../assets/images/logo9.png" />
+      </div>
+      <div class="image-container center wrap m5">
+        <img src="../../assets/images/logo10.png" />
+      </div>
+      <div class="image-container center wrap m5">
+        <img src="../../assets/images/logo11.png" />
+      </div>
+      <div class="image-container center wrap m5">
+        <img src="../../assets/images/logo12.png" />
+      </div>
+    </div>
+    <p class="center" style="color: var(--blue-button); margin-top: 20px;">Can’t find your logo? Hit next we can do it
+      later!</p>
+  </div>
+  <div class="portal-footer" style="margin-top: 20px;">
+    <div class="back-button" onclick="handlePortalBack3()">
+      <span class="material-icons-outlined ">
+        arrow_back
+      </span>
+    </div>
+    <button class="portal-submit-button" onclick="handlePortal3()">
+      Next
+    </button>
+  </div>
+
+</div>
+<script>
+  function handlePortalBack3() {
+    document.getElementById('currentStep').innerText = 2;
+    document.getElementById('progress').style.width = "50%";
+    document.getElementById('portal2').classList.replace('hidden', 'visible')
+    document.getElementById('portal3').classList.replace('visible', 'hidden')
+  }
+  function handlePortal3() {
+    document.getElementById('currentStep').innerText = 4;
+    document.getElementById('progress').style.width = "100%";
+    document.getElementById('portal4').classList.replace('hidden', 'visible')
+    document.getElementById('portal3').classList.replace('visible', 'hidden')
+
+    console.log('Portal 3');
+  }
+
+</script>

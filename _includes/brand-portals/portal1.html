@@ -1,33 +1,34 @@
-<!-- HTML Structure -->
-<div class="portal-step">
-  <div class="inner-stack">
-    <h4 class="title">Tell Us About Your Business</h4>
-    <p class="description">Just drop in your company name and website, and we’ll work our magic to speed up your setup!</p>
-    
-    <label class="label">
+<div class="column-center" style=" width: 50vw;">
+  <div>
+    <h4>Tell Us About Your Business</h4>
+    <p style="margin-top: 40px;">Just drop in your company name and website, and we’ll work our magic to speed up
+      your setup!</p>
+
+    <label class="company-name-label">
       Company Name<span class="required">*</span>
     </label>
-    <input
-      type="text"
-      required
-      class="text-field"
-      placeholder="Enter your company name"
-      value="" <!-- Bind this to your JavaScript state -->
-      oninput="setCompanyName(this.value)" <!-- Update this function accordingly -->
-    />
-    
-    <label class="label">
-      Company Website URL<span class="required">*</span>
+    <input type="text" class="company-name-input" required placeholder="Enter your company name" />
+    <label class="company-name-label">
+      Company Website Url<span class="required">*</span>
     </label>
-    <input
-      type="text"
-      required
-      class="text-field"
-      placeholder="Enter company website URL"
-      value="" <!-- Bind this to your JavaScript state -->
-      oninput="setCompanyWebsite(this.value)" <!-- Update this function accordingly -->
-    />
-    
-    <button class="footer-button" onclick="handleSubmit()">Next</button>
+    <input type="text" class="company-name-input" required placeholder="Enter your company name" />
+  </div>
+  <div class="portal-footer" style="margin-top: 20px;">
+    <button class="portal-submit-button" onclick="handlePortal1()">
+      Next
+    </button>
   </div>
 </div>
+<script>
+
+  function handlePortal1() {
+    document.getElementById('currentStep').innerText = 2;
+    document.getElementById('progress').style.width = "50%";
+
+    document.getElementById('portal2').classList.replace('hidden', 'visible')
+    document.getElementById('portal1').classList.replace('visible', 'hidden')
+    console.log('Portal 2');
+  }
+
+
+</script>

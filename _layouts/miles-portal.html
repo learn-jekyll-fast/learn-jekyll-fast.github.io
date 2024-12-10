@@ -11,15 +11,32 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
-<body>
-  <div class="stack">
+<body style="zoom:90%">
+  <!-- <div class="center hidden">
+    <img alt="logo" class="logo" src="assets/images/landing-logo.png" />
+  </div> -->
+  <div class="portal1-container">
     <img alt="logo" class="logo" src="assets/images/logo/logo-header.png" />
-    <span class="step-caption">Step <span id="currentStep">0</span> of 4</span>
+    <span class="step-caption">Step <span id="currentStep">1</span> of 4</span>
     <div class="linear-progress" style="width: 300px; height: 16px;">
-      <div class="progress-bar" style="width: 40%;"></div>
+      <div id="progress" class="progress-bar" style="width: 25%;"></div>
     </div>
-    {% include brand-portals/portal1.html %}
   </div>
+  <div class="company-name-container" style="display: flex;flex-direction: column; align-items: center;">
+    <div id="portal1" class="visible" style=" width: 50vw;">
+      {% include brand-portals/portal1.html %}
+    </div>
+    <div id="portal2" class="hidden" style=" width: 50vw;">
+      {% include brand-portals/portal2.html %}
+    </div>
+    <div id="portal3" class="hidden" style=" width: 50vw;">
+      {% include brand-portals/portal3.html %}
+    </div>
+    <div id="portal4" class="hidden" style=" width: 50vw;">
+      {% include brand-portals/portal4.html %}
+    </div>
+  </div>
+
 </body>
 
 </html>

@@ -1,8 +1,9 @@
 ---
 layout: align
-title: "Opportunities Builder"
+title: "Opportunities Creator"
 tab: app
-blurb: "We'll quickly build out opportunities for you."
+access: admin
+blurb: "Create and test opportunites at lightning speed."
 ---
 
 <link rel="manifest" href="manifest.json"/>
