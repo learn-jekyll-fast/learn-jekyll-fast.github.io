@@ -1,0 +1,284 @@
+
+story points vs hours
+
+poker planning
+
+Problem with story points in agile	6,600	
+
+How to estimate Story Points in Scrum 
+
+
+
+
+
+
+
+
+story points fibonacci	3,600	
+
+Story Points in Agile and Scrum
+
+
+Top 5 Agile estimation techniques
+
+There's an old saying: "Those who fail to plan, plan to fail. And those who plan based on estimates plan to fail as well."
+
+I actually added that last part
+
+The terms "Agile" and "estimations" don't align well together.
+
+Agile is all about 'responding to change instead of following a plan', while any accurate estimation requires a fixed plan that doesn't cahge. That's a square you can't circle.
+
+However, even before the Agile Manifesto was signed, developers were exploring ways to guage the amount of effort required to implement a given feature, user story or task. Agile esimation is an inexact science, but in an effort to bring as much precision as possible to the practice, product development teams typically engage in one of the following five Agile estimation approaches:
+
+
+Calendar Day Estimation
+
+The simplest Agile estimation approach is to simply look at a task and estimate how many days, or half days, a given feature might take to develop.
+
+Small teams made up of experienced developers on projects where the requirements are clear and relatively unchanging do well with this technique. It's simple and effective.
+
+This approach does come with one persnickity guideline, though: estimated tasks shouldn't exceed five days.
+
+If a task is estimated to be more than five days, it should be broken down into smaller tasks that are. The cone of uncertainty widens beyond acceptability as a task is estimated for beyond a week's worth of work.
+
+Ideal Day Estimation
+
+Ideal Day estimation asks a developer to estimate the actual amount of time behind they keyboard they think they will need to complete a task. That's a fictional, ideal day. 
+
+After the ideal number of days to complete a task is estimated, it gets multiplied by a load factor which gives you the number of calendar days to be dedicated to the task.
+
+Load factors are typically a multiple of 3 or 4 and exist to account for the amount of development time that will be wasted by a developer having to:
+
+- Context switch
+- Attend supurfluous meetings
+- Handle chores like emails
+- Deal with changing requirements
+
+Ideal Day Agile estimations have their roots in early XP based development environments. To avoid the ongoing difficulty management had differentiating between an ideal day and a calendar day, the term ideal day was changed into story points, although story points estimation has evolved far beyond its ideal day roots.
+
+Story Point Estimation
+
+Story Point estimation is the most popular Agile estimation technique. However, story point estimation is not intended to be time based, but instead, it's effort based. That creates a bit of friction between Agile teams and project managers who want clear delivery dates and timelines.
+
+The idea of a story point is to estimate how much effort various items a team's product backlog will take to complete.
+
+A user story assigned 2 points should be twice as much effort as a 1. An 8 should be 4 times as much effort as an 8, and so on. That's the user story approach in its purest form.
+
+However, to help teams gauge what might be a 3, 5 or 21, a general mapping like this is typically used:
+
+1 point takes half a day
+2 points takes a full day
+3 points take two days
+5 points is about 3 days
+8 points is about a week
+
+The next number in the Fibonacci sequence Story point estimations often use is 13, which tends to be an indication that the requirements are unclear and should be broken down into smaller chunks that are easier to estimate. 
+
+This table typicaly helps team to estimate story points. However, a better measure of progress is the number of story points a team typicaly completes in a Sprint, which is often referred to as the Agile velocity of a team.
+
+By dividing the number of story points in an important story or epic by the team's velocity, management can get a rough estimate of when an epic or a story will be completed. By dividing the number of points in the project by the teams velocity, a project manager can calculate the project's end date.
+
+T-Shirt Sizing
+
+The numeric nature of story points makes them very easy to convert into time based metrics, or be used to compare separate development teams within an organziation, all of which is a corruption of their original intent.
+
+To capture the essence of story points, while avoiding the pitfalls, many agile teams have opted for T-Shirt sizing.
+
+With this approach, teams categorize items in their product backlog into the following five t-shirt sizes:
+
+XS (Extra Small)
+S (Small)
+M (Medium)
+L (Large)
+XL (Extra Large)
+
+This approach is especially useful with new teams where their velocity and capabilities are largely unknown.
+
+Initially, a team won't know how long an XL will take them to complete, and the disassocaition between a T-Shirt size and a time estimate helps Scrum Masters push back against managers who ask for hard deadlines.
+
+It also helps instigate conversation, as any user storie identified as being large or extra large is an indication to stakeholders that the developers perceive a great deal of risk, or that the requirements are simply unclear. 
+
+T-Shirt sizing allows teams to estimate the relative work effort of epics and tasks without being bound to tight deadlines, or falling into the trap of working just to put story points on the board instead of focussing on what's most valuable for the customer.
+
+The no-estimate estimate
+
+The final Agile estimation technique that's currently picking up steam is to do no estimations at all. It's known as the 'no-estimates' movement, and it simply asserts that estimations in an Agile envrionment are inherently unreliable, and consuming development time by asking a team of developers to play a game of poker planning or categorize their work into t-shirt sizes is simply a waste.
+
+Instead, development teams should simply work on the user stories that will provide the most value to the client when completed, developers should deliver updates to stakeholders regularly to make their progress transparent, and focus should be on delivering a minimally viable product first, and supplemental features afterwards. 
+
+Since estimates don't have any actual bearing on when a product or a feature will be delivered, there's no point wasting time discussing it. Instead, discuss building the product and let the developers develop.
+
+Agile Estimation Techniques
+
+Estimating the work effort required to complete anything, be it a software product or an underground highway, is frought with uncertainty. However, most product development teams decide upon one of the five Agile estimation techniques for their proejcts:
+
+- Calendar Day Estimates
+- Ideal Day Estimates
+- Story Points Estimates
+- T-Shirt sizing
+- No estimate estimates
+
+Which Agile estimation technique a team should choose is an individual decision that depends upon how advanced they are in their Agile transition, how long the team has been working together, and how mature the product under development is. Teams are encourages to experiment with each approach and discover the approach that works best for them.
+
+
+
+but the conventional approach goes something like this:
+
+- Individual developers on a team are asked to secretly estimate how many points to assign a given task
+- Half a day is one point
+- A full day is two points
+- Two to three days is five
+- A week is eight 
+
+
+
+
+
+
+
+The following are the
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Any discussion of story points in Scrum must begin by stating that story points are never actually mentioned in the Scrum Guide.
+
+Scrum is a lightweight, purposefully incomplete framework that helps guide teams as they develop products. Teams are encouraged to incorporate whatever processes and techniques work best for them, but the Scrum Guide neither advocates for or discourages the use of Story Points. If teams want to use them, it's up to them.
+
+What are story points?
+
+Story points are a way to estimate the amount of effort required to complete a specific software development task. 
+
+From designing a company logo to building out AWS infrastructure, it's very difficult to estimate the exact amount of time a given task will take, especially when continual customer feedback means requirements may change mid-task.
+
+Rather than trying to estimate exactly how many hours a task might take, teams are asked to assign 'points' to each task they are given. Tasks developers might take a day to complete will get assigned two points. If it'll take two days or three days, it may get assigned five points. Between three days and a week? That might be 8 points. 
+
+Story point assignments are commonly done following the Fibonnaci sequence of 1, 2, 3, 5, 8, 13 and 21.
+
+Really big tasks might get assigned 13 or 21 points, although story point estimations that large are a good indicator that the user story or task should be broken up into smaller, more manageable pieces. That's actually one of the benefits to asking developers to estimate how much work it will take to create a story. If their estimates are really high, it shows that the story should be broken down into more manageable pieces.
+
+When do Scrum Teams assign story points?
+
+The first event to take place after a Sprint starts is Sprint Planning. This is the optimal time for developers to assign points to the stories planned for the current Sprint.
+
+Over time, a team of developers will know approximately how many story points they complete each sprint. This is known as the team's velocity. During Sprint planning, teams use this velocity information to select the various product backlog items they believe they can complete during the sprint. 
+
+This is another key benefit to using story points. With an understanding of how much work typically gets completed in past sprint, teams can better perform capacity planning in future Sprints.
+
+At the end of Spring planning, the team has what is known as a Sprint backlog, which is the set of stories the team plans to complete. 
+
+Story points and Sprint retrospectives
+
+At the conclusion of Spring Planning the number of story points assigned to the Sprint's backlog is tallied. Throughout the Sprint, developers will report to the team when a story is completed. A graph that tracks how the total assigned points at the beginning of the sprint progressively dwindles as the sprint progresses is known as a burndown chart.
+
+This is the third key benefit of estimating using story points. It helps teams evaluate their progress as the sprint transpires, encourating them to adapt and change if backlog items aren't being completed as planned.
+
+According to the Scrum Guide, each Sprint must conclude with a Sprint retrospective where the team discusses how the Sprint progressed and how they can improve their practices for the future. How many story points were completed and how well the team used tools like velocity metrics and burndown charts are often used to gauge how the team performed in the current sprint compared to sprints of the past.
+
+Criticisms of Story Points
+
+Not every Scrum team uses story points. In fact, many Scrum Masters deplore story points and the estimation in general. Even Ron Jeffries, the inventor of Story Points, says he's somewhat disappoint with what story points have become. 
+
+"Well, if I did invent story points, I’m probably a little sorry now, but not very sorry. I do think that they are frequently misused and that we can avoid many pitfalls by not using story estimates at all."
+
+https://ronjeffries.com/articles/019-01ff/story-points/Index.html
+
+In the Agile space, we believe in 'responding to change instead of following a plan.' When Agile is done right, we are constantly delivering working software to the client and adapting based on their feedback. If the work is constantly in flux, how can anyone accurately estimate how much time a given user story or task will take to complete? Many in the Scrum community oppose estimating work entirely as it runs counter to the values of being Agile and focussing on one thing it a time.
+
+Other common problems Scrum Masters have with story points is that management often compares one team to another based on how many points they complete in a week. Given how arbitrary point assignment is, or how one team's definition of done might vary from another, such comparisons can be entirely unfair.
+
+And perhaps most damaging is the fact that teams that are story point driven spend more time focused on the slope of the burndown chart than on the value they are bringing to the table. An Agile team's highest priority is not to complete ever story point assigned at the end of the spring. An Agile team's "highest priority is to satisfy the customer through early and continuous delivery of valuable software."
+
+The result of chasing story points often runs counter the the goal of delivering value, and if that starts to happen, story points are a very bad thing.
+
+So should Scrum teams use story points or not? I think Ron Jeffries should have the last word on that.
+
+"If they’re not providing great value to your team or company, I’d advise dropping them on the grounds that they are waste. If, on the other hand, you just love them, well, carry on!"
+
+
+
+
+Sometimes Scrum teams will assemble for backlog refinement sessions where they estimate a large number of stories in an effort to gauge how much the team might be able to complete in a given month or quarter.
+
+These sessions can sometimes be helpful, as it helps give all members of the team a big picture of everything that needs to get done. However, as a Scrum Master, I tend to push back on running these types of sessions too often. Keeping developers developing and is one of the best things a Scrum Master can do for their team, so I like to avoid pulling my developers into meetings as much as possible.
+
+Furthermore, planning what might happen one or two months out goes against the Scrum value of focus, which insists the team should concentrate on what they are building today, not what may or may not get built two or three months from now.
+
+Tracking progress with Burndown Charts
+
+
+**************************
+
+Story Points in Scrum
+When you talk about story points in Scrum, remember that the official Scrum Guide doesn’t mention them.
+
+Scrum is a simple framework that helps teams build products. It leaves out some details, so teams can add their own processes that work best for them. The Scrum Guide doesn’t require or forbid story points. Teams get to decide if they want to use them or not.
+
+What are story points?
+Story points let teams estimate how much effort a task will take.
+
+For example, it’s hard to predict exactly how long it will take to design a company logo or set up cloud infrastructure. Customers can change their minds halfway through, which makes it even harder to estimate time. Instead of guessing the number of hours, teams use points to measure how big or small a task is.
+
+If a task might take one day, you might give it two points. If it’ll take two or three days, you might give it five points. For something bigger that takes up to a week, you might assign eight points.
+
+Teams often use numbers from the Fibonacci sequence (1, 2, 3, 5, 8, 13, and 21) to assign story points. If a task gets assigned 13 or 21 points, that’s a sign it needs to be broken down into smaller parts. This helps make the work easier to manage.
+
+When do Scrum teams assign story points?
+Right after a Sprint starts, the team begins Sprint Planning. This is the best time to assign points to the tasks they plan to complete during the Sprint.
+
+As teams gain experience, they get better at knowing how many story points they can finish in each Sprint. This becomes their velocity. During Sprint Planning, teams use their velocity to decide how many tasks they can handle. With this information, they can plan better for future Sprints.
+
+At the end of Sprint Planning, the team has a list of tasks, called the Sprint backlog, that they will work on during the Sprint.
+
+Story points and Sprint retrospectives
+At the end of Sprint Planning, the team adds up the total story points for the Sprint. During the Sprint, developers let the team know when they finish a task. A burndown chart tracks how the total points go down as tasks get completed.
+
+This is another advantage of using story points. The team can monitor their progress and make adjustments if they see they’re falling behind.
+
+According to the Scrum Guide, every Sprint ends with a Sprint retrospective. During this meeting, the team reviews how things went. They talk about how many story points they completed and look for ways to improve. They use tools like velocity and burndown charts to compare their progress to past Sprints.
+
+Criticisms of Story Points
+Not all Scrum teams use story points. Some teams don’t like them. Even Ron Jeffries, who invented story points, has mixed feelings about how they’re used today.
+
+He said, "I think they are frequently misused, and we can avoid many problems by not using them at all."
+
+Many people in the Agile community argue that estimating tasks goes against the spirit of Agile. Agile focuses on adapting to change and delivering value quickly. Since things often change, it’s hard to accurately predict how long tasks will take. Some teams believe it’s better to skip task estimates.
+
+Another issue is that managers sometimes compare how many points different teams finish in a week. This can be unfair since the way teams assign points can vary. One team’s definition of "done" might also be different from another’s.
+
+Focusing too much on story points can also distract teams from their real goal—delivering valuable software to the customer. An Agile team’s main priority is to deliver useful work to the customer, not just complete a set number of points. If teams focus too much on hitting a certain number of story points, they can lose sight of delivering value.
+
+Should Scrum teams use story points?
+Ron Jeffries suggests: "If story points don’t help your team, it’s best to stop using them. But if you really like them, feel free to keep using them!"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

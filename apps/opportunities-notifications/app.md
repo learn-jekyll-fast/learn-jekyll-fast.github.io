@@ -1,8 +1,15 @@
 ---
 layout: align
-title: "Opportunities Builder"
+title: "Opportunity Notifications"
+icon: "notifications_active"
+blurb: "We'll quickly build out opportunities for you, but with a new look."
+access: "external-user"
+authenticated: true
+
+top-level-link: false
 tab: app
-blurb: "We'll quickly build out opportunities for you."
+priority: 2
+
 ---
 
 <link rel="manifest" href="manifest.json"/>

@@ -1,0 +1,14 @@
+/*Bootstrap CSS*/
+@import "bootstrap.min.css";
+
+/*FontAwesome*/
+@import "font-awesome.min.css";
+
+
+/*Animate css*/
+@import "animate.css";
+@import "animate.min.css";
+
+/*Owl Slider*/
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";

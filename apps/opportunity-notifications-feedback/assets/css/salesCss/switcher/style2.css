@@ -1,0 +1,84 @@
+.slider_active .swiper-button-prev:after,
+.slider_active .swiper-button-next:after,
+.google_play,
+.app_store,
+.cl_title,
+.feature_icon,
+.pricingTable .pricingContent ul li i,
+.testimonial .testimonial-title,
+.blog_info i,
+.blog_info a:hover,
+.blog_info a:focus,
+.single_blog h4 a:hover,
+.single_blog h4 a:focus,
+.accordion-item .accordion-header button::before,
+.social_link a:hover {
+	color: #2193b0;
+
+}
+
+#accordion .panel-title a.collapsed:before {
+	color: #fff;
+}
+
+.single_feature .border_line {
+	background: #2193b0;
+}
+
+#style-switcher h2 a,
+.welcome-area,
+.blue,
+.appbutton,
+.review_slider .swiper-button-prev:after,
+.review_slider .swiper-button-next:after,
+.app_screens_slider .slick-prev,
+.app_screens_slider .slick-next,
+.app_screens_slider .slick-dots li.slick-active button::before,
+.single_promo:hover .promo_icon,
+.pricingTable .price,
+.post_date,
+.accordion-item .accordion-button,
+.accordion-item .accordion-header button.collapsed::before,
+#footer,
+.smain_form .btn.btn-default,
+.preloader {
+	background: -webkit-linear-gradient(to right, #2193b0, #6dd5ed);
+	background: linear-gradient(to right, #2193b0, #6dd5ed);
+	border-color: #6dd5ed;
+}
+
+.bg_image:before {
+	background-image: -webkit-linear-gradient(to right, #2193b0, #6dd5ed);
+	background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+.app_screens_slider .slick-dots li.slick-active button::before {
+	box-shadow: 0 0 8px #6dd5ed;
+}
+
+.app_screens_slider .slick-dots li button::before {
+	background: #2193b0;
+	color: transparent;
+	border: 1px solid #6dd5ed;
+
+}
+
+.appbutton,
+.form-control:focus {
+	border-color: #6dd5ed;
+}
+
+.appbutton:hover,
+.appbutton:focus {
+	color: #2193b0;
+	border-color: #2193b0;
+}
+
+.single_promo .promo_icon {
+	border-color: #2193b0;
+	color: #2193b0;
+}
+
+.video_area {
+	box-shadow: 17px 17px 30px rgba(33, 147, 176, 0.3);
+}

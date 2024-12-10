@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8fea0362.css",
+    "main.js": "/static/js/main.b75ec471.js",
+    "static/js/453.6b37b6a7.chunk.js": "/static/js/453.6b37b6a7.chunk.js",
+    "static/js/239.1fe6f8ce.chunk.js": "/static/js/239.1fe6f8ce.chunk.js",
+    "static/js/213.ea792c97.chunk.js": "/static/js/213.ea792c97.chunk.js",
+    "static/js/732.ce51a058.chunk.js": "/static/js/732.ce51a058.chunk.js",
+    "static/media/chart3.png": "/static/media/chart3.c8f8bd8bc519774bc560.png",
+    "static/media/chart1.png": "/static/media/chart1.093de4a464a5978da78d.png",
+    "static/media/landing-logo.png": "/static/media/landing-logo.d4e67ff194e4406d50fa.png",
+    "static/media/chart2.png": "/static/media/chart2.a70aa7d8d54980c1ed01.png",
+    "static/media/align-hcm-logo.png": "/static/media/align-hcm-logo.3c01c130c1886ead20df.png",
+    "static/media/logo2.png": "/static/media/logo2.8428fe94758912b267cb.png",
+    "index.html": "/index.html",
+    "static/media/bg-wave.svg": "/static/media/bg-wave.1234a4179514348cc51cb28ccbfd011c.svg",
+    "main.8fea0362.css.map": "/static/css/main.8fea0362.css.map",
+    "main.b75ec471.js.map": "/static/js/main.b75ec471.js.map",
+    "453.6b37b6a7.chunk.js.map": "/static/js/453.6b37b6a7.chunk.js.map",
+    "239.1fe6f8ce.chunk.js.map": "/static/js/239.1fe6f8ce.chunk.js.map",
+    "213.ea792c97.chunk.js.map": "/static/js/213.ea792c97.chunk.js.map",
+    "732.ce51a058.chunk.js.map": "/static/js/732.ce51a058.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fea0362.css",
+    "static/js/main.b75ec471.js"
+  ]
+}
