@@ -50,10 +50,10 @@ async function login() {
     sessionStorage.setItem('user', JSON.stringify(user))
     console.log('USER:  ' + JSON.stringify(user.name));
     if (user.role === 'admin') {
-      window.location.replace('/dashboard.html')
+      window.location.replace('tabs/dashboard.html')
 
     } else {
-      window.location.replace('/applications.html')
+      window.location.replace('tabs/applications.html')
     }
     // window.location.href = '/dashboard.html';
 

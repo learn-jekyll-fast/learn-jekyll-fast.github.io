@@ -36,7 +36,7 @@ function updateDashboard() {
   if (isAdmin) {
     console.log('IS ADMIN');
     document.getElementById("nav-list").classList.add('hidden');
-    document.getElementById("nav-list-admin").classList.add('visible');
+    document.getElementById("nav-list-admin").classList.replace('hidden', 'visible');
 
   } else {
     document.getElementById("nav-list").classList.add('visible');
@@ -58,40 +58,37 @@ function navListClick(index) {
   let element;
   switch (index) {
     case 0:
-      element = document.getElementById("dashboard-view");  // Get the DIV element
-      element.classList.remove("hidden"); // Remove mystyle class from DIV
-      element.classList.add("visible"); // Add newone class to DIV
-      document.getElementById("apps-view").classList.remove('visible')
-      document.getElementById("apps-view").classList.add('hidden')
+      document.getElementById("dashboard-view").classList.replace('hidden', 'visible');
+
+      document.getElementById("apps-view").classList.replace('visible', 'hidden');
+      document.getElementById("metrics-view").classList.replace('visible', 'hidden');
 
       break;
     case 1:
-      element = document.getElementById("apps-view");  // Get the DIV element
-      element.classList.remove("hidden"); // Remove mystyle class from DIV
-      element.classList.add("visible"); // Add newone class to DIV
-      document.getElementById("dashboard-view").classList.remove('visible')
-      document.getElementById("dashboard-view").classList.add('hidden')
+      document.getElementById("apps-view").classList.replace('hidden', 'visible');
+
+      document.getElementById("dashboard-view").classList.replace('visible', 'hidden')
+      document.getElementById("metrics-view").classList.replace('visible', 'hidden')
 
       break;
     case 2:
-      element = document.getElementById("apps-view");  // Get the DIV element
-      element.classList.remove("hidden"); // Remove mystyle class from DIV
-      element.classList.add("visible"); // Add newone class to DIV
-      document.getElementById("dashboard-view").classList.remove('visible')
-      document.getElementById("dashboard-view").classList.add('hidden')
+      document.getElementById("metrics-view").classList.replace('hidden', 'visible');
+
+      document.getElementById("dashboard-view").classList.replace('visible', 'hidden')
+      document.getElementById("apps-view").classList.replace('visible', 'hidden')
 
       break;
     default:
       break;
   }
-  var navList = document.getElementById("nav-list-admin").children;
-  for (var i = 0; i < navList.length; i++) {
-    navList[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace("active", "");
-      this.className += "active";
-    });
-  }
+  // var navList = document.getElementById("nav-list-admin").children;
+  // for (var i = 0; i < navList.length; i++) {
+  //   navList[i].addEventListener("click", function () {
+  //     var current = document.getElementsByClassName("active");
+  //     current[0].className = current[0].className.replace("active", "");
+  //     this.className += "active";
+  //   });
+  // }
 
 }
 

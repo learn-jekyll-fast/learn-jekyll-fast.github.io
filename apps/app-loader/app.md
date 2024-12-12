@@ -5,6 +5,8 @@ blurb: "Provide a zip file. We'll do the rest."
 control-panel: true
 enterprise: true
 tab: app
+access: admin
+
 ---
       
 <link rel="manifest" href="manifest.json"/>

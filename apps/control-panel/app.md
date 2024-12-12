@@ -2,7 +2,7 @@
 layout: align
 title: "Jira & Metrics"
 blurb: "Here are some metrics and Jira."
-tab: app
+tab: metrics
 
 enterprise: true
 company-subscription: true

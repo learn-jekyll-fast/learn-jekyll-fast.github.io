@@ -3,17 +3,21 @@
 
 <body>
   <div id="container" class="dashboard-container">
-    {% if page.tab == "dashboard" %}
-    <div id="dashboard-view" class="main-container hidden">
+
+    <div id="dashboard-view" class="main-container">
+      {% if page.tab == "dashboard" %}
       {% include drawer-container/dashboard.html %}
+      {% endif %}
     </div>
-    {% endif %}
-    <div id="apps-view" class="main-container">
-      {% if page.tab == "applications" %}
+    <div id="apps-view" class="main-container ">
+      {% if page.tab == "apps" %}
       {% include drawer-container/apps.html %}
       {% else %}
       {{content}}
       {% endif %}
+    </div>
+    <div id="metrics-view" class="main-container ">
+      {{content}}
     </div>
     <div id="main" class="main-container hidden">
     </div>
